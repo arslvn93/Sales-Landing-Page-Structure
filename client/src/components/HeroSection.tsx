@@ -1,16 +1,54 @@
 import { useEffect, useRef } from "react";
 
 const HeroSection = () => {
+  // Use direct style application instead of relying on class-based GSAP animations initially
+  const animateIn = () => {
+    console.log("Manually animating hero section");
+    
+    // Apply animations directly with inline styles for testing
+    if (titleRef.current) {
+      titleRef.current.style.opacity = "1";
+      titleRef.current.style.transform = "translateY(0)";
+      titleRef.current.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+    }
+    
+    if (subtitleRef.current) {
+      setTimeout(() => {
+        subtitleRef.current!.style.opacity = "1";
+        subtitleRef.current!.style.transform = "translateY(0)";
+        subtitleRef.current!.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+      }, 300);
+    }
+    
+    if (ctaRef.current) {
+      setTimeout(() => {
+        ctaRef.current!.style.opacity = "1";
+        ctaRef.current!.style.transform = "translateY(0)";
+        ctaRef.current!.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+      }, 600);
+    }
+  };
+
   const titleRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
+    // Initial setup
+    if (titleRef.current) titleRef.current.style.opacity = "0";
+    if (titleRef.current) titleRef.current.style.transform = "translateY(50px)";
+    
+    if (subtitleRef.current) subtitleRef.current.style.opacity = "0";
+    if (subtitleRef.current) subtitleRef.current.style.transform = "translateY(50px)";
+    
+    if (ctaRef.current) ctaRef.current.style.opacity = "0";
+    if (ctaRef.current) ctaRef.current.style.transform = "translateY(50px)";
+    
+    // Trigger animations
+    setTimeout(animateIn, 100);
+    
     // These classes will be targeted by the GSAP animations initialized in animation.ts
-    if (titleRef.current) titleRef.current.classList.add("text-reveal");
-    if (subtitleRef.current) subtitleRef.current.classList.add("text-reveal-delay");
-    if (ctaRef.current) ctaRef.current.classList.add("text-reveal-delay-2");
     if (imageRef.current) imageRef.current.classList.add("floating-element");
   }, []);
 
@@ -25,7 +63,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="bg-gradient-to-br from-secondary to-secondary/90 text-white py-20">
+    <section id="hero" className="bg-gradient-to-br from-secondary to-secondary/90 text-white py-20">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0">
@@ -47,7 +85,7 @@ const HeroSection = () => {
             >
               <button 
                 onClick={() => scrollToSection("cta")} 
-                className="bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-lg text-center transition shadow-lg pulse-btn"
+                className="bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-lg text-center transition shadow-lg"
               >
                 Secure Your Spot
               </button>

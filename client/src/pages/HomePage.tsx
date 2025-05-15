@@ -47,23 +47,14 @@ const HomePage = () => {
       {/* Add actual Navbar component */}
       <Navbar />
       
-      {/* Simple hero section for testing */}
-      <div className="bg-secondary text-white p-8 mb-4">
-        <div className="container mx-auto">
-          <h1 className="text-4xl font-bold mb-4">6-Month Lead Machine</h1>
-          <p className="text-xl mb-4">Generate consistent leads in 6 months or less</p>
-          <button className="bg-accent text-secondary font-bold py-2 px-6 rounded">
-            Get Started
-          </button>
-        </div>
-      </div>
-
-      {/* Original components - adding back one by one */}
+      {/* Original HeroSection component */}
       <HeroSection />
+      
+      {/* Problem Section with new animations */}
+      <ProblemSection />
       
       {/* Components still commented out for now */}
       {/*
-      <ProblemSection />
       <SolutionSection />
       <HowItWorksSection />
       <FeaturesSection />
