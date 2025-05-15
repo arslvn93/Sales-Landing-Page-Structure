@@ -1,0 +1,107 @@
+// Initialize GSAP animations
+document.addEventListener('DOMContentLoaded', function() {
+  // Text reveal animations
+  gsap.registerPlugin(ScrollTrigger);
+  
+  // Hero animations
+  gsap.from('.text-reveal', {
+    opacity: 0,
+    y: 50,
+    duration: 1
+  });
+  
+  gsap.from('.text-reveal-delay', {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    delay: 0.3
+  });
+  
+  gsap.from('.text-reveal-delay-2', {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    delay: 0.6
+  });
+  
+  // Floating element animation
+  gsap.to('.floating-element', {
+    y: 20,
+    duration: 2,
+    repeat: -1,
+    yoyo: true,
+    ease: "power1.inOut"
+  });
+  
+  // Process steps animation
+  gsap.utils.toArray('.process-step').forEach(step => {
+    gsap.from(step, {
+      scrollTrigger: {
+        trigger: step,
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none none"
+      },
+      opacity: 0,
+      x: -50,
+      duration: 0.8
+    });
+  });
+  
+  // Counter animations
+  gsap.utils.toArray('.counter').forEach(counter => {
+    const target = parseInt(counter.getAttribute('data-count'));
+    ScrollTrigger.create({
+      trigger: counter,
+      start: "top 90%",
+      onEnter: () => {
+        const obj = { val: 0 };
+        gsap.to(obj, {
+          val: target,
+          duration: 2,
+          onUpdate: function() {
+            counter.innerHTML = Math.floor(obj.val).toLocaleString();
+          }
+        });
+      }
+    });
+  });
+  
+  // Countdown timer
+  const countdownDate = new Date("June 1, 2025 23:59:59").getTime();
+  
+  const countdownTimer = setInterval(function() {
+    const now = new Date().getTime();
+    const distance = countdownDate - now;
+    
+    document.getElementById("days").innerHTML = Math.floor(distance / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
+    document.getElementById("hours").innerHTML = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
+    document.getElementById("minutes").innerHTML = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
+    document.getElementById("seconds").innerHTML = Math.floor((distance % (1000 * 60)) / 1000).toString().padStart(2, '0');
+    
+    if (distance < 0) {
+      clearInterval(countdownTimer);
+      document.getElementById("countdown").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+  
+  // Pulse button animation
+  gsap.to('.pulse-btn', {
+    scale: 1.05,
+    duration: 0.8,
+    repeat: -1,
+    yoyo: true,
+    ease: "power1.inOut"
+  });
+  
+  // Sticky CTA on mobile
+  const showStickyButton = () => {
+    if (window.scrollY > 300) {
+      document.querySelector('.sticky-cta').classList.add('visible');
+    } else {
+      document.querySelector('.sticky-cta').classList.remove('visible');
+    }
+  };
+  
+  window.addEventListener('scroll', showStickyButton);
+});
