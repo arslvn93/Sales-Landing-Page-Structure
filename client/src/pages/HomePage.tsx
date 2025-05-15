@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ProblemSection from "@/components/ProblemSection";
@@ -15,9 +15,27 @@ import StickyMobileCta from "@/components/StickyMobileCta";
 import { initializeAnimations } from "@/assets/animation";
 
 const HomePage = () => {
+  const initializedRef = useRef(false);
+  
   useEffect(() => {
-    // Initialize GSAP animations when component mounts
-    initializeAnimations();
+    // Only initialize animations once when component mounts
+    if (!initializedRef.current) {
+      console.log('HomePage mounted, initializing animations...');
+      
+      // Wait for DOM to be fully rendered
+      setTimeout(() => {
+        initializeAnimations();
+        initializedRef.current = true;
+      }, 100);
+    }
+    
+    // Clean up any animations or event listeners when component unmounts
+    return () => {
+      if (typeof window !== "undefined" && window.ScrollTrigger) {
+        console.log('HomePage unmounted, cleaning up animations');
+        window.ScrollTrigger.getAll().forEach((trigger: any) => trigger.kill());
+      }
+    };
   }, []);
 
   return (
