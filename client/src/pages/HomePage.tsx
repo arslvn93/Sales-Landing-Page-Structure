@@ -53,9 +53,11 @@ const HomePage = () => {
       {/* Problem Section with new animations */}
       <ProblemSection />
       
+      {/* Solution Section with new animations */}
+      <SolutionSection />
+      
       {/* Components still commented out for now */}
       {/*
-      <SolutionSection />
       <HowItWorksSection />
       <FeaturesSection />
       <TestimonialsSection />
