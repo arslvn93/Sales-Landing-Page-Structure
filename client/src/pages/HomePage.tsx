@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import TestComponent from "@/components/TestComponent"; // Import the test component
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ProblemSection from "@/components/ProblemSection";
@@ -40,6 +41,10 @@ const HomePage = () => {
 
   return (
     <div className="bg-white">
+      {/* Add test component first to verify rendering */}
+      <TestComponent />
+      
+      {/* Original components */}
       <Navbar />
       <HeroSection />
       <ProblemSection />
