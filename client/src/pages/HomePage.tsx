@@ -44,12 +44,8 @@ const HomePage = () => {
       {/* Add test component first to verify rendering */}
       <TestComponent />
       
-      {/* Simple inline navbar for testing */}
-      <div className="bg-primary text-white p-4 mb-4">
-        <div className="container mx-auto">
-          <h2 className="text-xl font-bold">Simple Test Navbar</h2>
-        </div>
-      </div>
+      {/* Add actual Navbar component */}
+      <Navbar />
       
       {/* Simple hero section for testing */}
       <div className="bg-secondary text-white p-8 mb-4">
@@ -62,10 +58,11 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* Original components - commented out for now */}
-      {/*
-      <Navbar />
+      {/* Original components - adding back one by one */}
       <HeroSection />
+      
+      {/* Components still commented out for now */}
+      {/*
       <ProblemSection />
       <SolutionSection />
       <HowItWorksSection />
