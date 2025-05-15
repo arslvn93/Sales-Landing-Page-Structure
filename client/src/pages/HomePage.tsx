@@ -44,7 +44,26 @@ const HomePage = () => {
       {/* Add test component first to verify rendering */}
       <TestComponent />
       
-      {/* Original components */}
+      {/* Simple inline navbar for testing */}
+      <div className="bg-primary text-white p-4 mb-4">
+        <div className="container mx-auto">
+          <h2 className="text-xl font-bold">Simple Test Navbar</h2>
+        </div>
+      </div>
+      
+      {/* Simple hero section for testing */}
+      <div className="bg-secondary text-white p-8 mb-4">
+        <div className="container mx-auto">
+          <h1 className="text-4xl font-bold mb-4">6-Month Lead Machine</h1>
+          <p className="text-xl mb-4">Generate consistent leads in 6 months or less</p>
+          <button className="bg-accent text-secondary font-bold py-2 px-6 rounded">
+            Get Started
+          </button>
+        </div>
+      </div>
+
+      {/* Original components - commented out for now */}
+      {/*
       <Navbar />
       <HeroSection />
       <ProblemSection />
@@ -58,6 +77,7 @@ const HomePage = () => {
       <CtaSection />
       <Footer />
       <StickyMobileCta />
+      */}
     </div>
   );
 };
