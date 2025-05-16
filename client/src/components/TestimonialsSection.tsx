@@ -155,7 +155,7 @@ const TestimonialsSection = () => {
           </h2>
           <p 
             ref={descriptionRef}
-            className="text-lg max-w-3xl mx-auto text-gray-100"
+            className="text-lg max-w-3xl mx-auto text-white"
           >
             Join the thousands of real estate agents who have transformed their lead generation with our program.
           </p>
