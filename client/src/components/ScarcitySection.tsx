@@ -190,14 +190,14 @@ const ScarcitySection = () => {
   };
   
   return (
-    <section className="scarcity-section bg-secondary text-white py-20">
+    <section className="scarcity-section bg-[#193d65] text-white py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 
             ref={titleRef}
             className="text-3xl md:text-4xl font-bold mb-4"
           >
-            Limited <span className="text-accent">Enrollment</span>
+            Limited <span className="text-white font-extrabold underline">Enrollment</span>
           </h2>
           <p 
             ref={descriptionRef}
@@ -209,7 +209,7 @@ const ScarcitySection = () => {
         
         <div 
           ref={countdownBoxRef}
-          className="bg-primary/20 backdrop-blur-sm rounded-xl p-8 max-w-4xl mx-auto mb-12"
+          className="bg-[#1c65b8]/20 backdrop-blur-sm rounded-xl p-8 max-w-4xl mx-auto mb-12"
         >
           <div className="text-center mb-8">
             <h3 
@@ -223,15 +223,15 @@ const ScarcitySection = () => {
               className="flex justify-center space-x-4 mt-6" 
               id="countdown"
             >
-              <div className="countdown-item bg-white text-secondary rounded-lg p-4 min-w-[80px] shadow-lg">
+              <div className="countdown-item bg-white text-[#193d65] rounded-lg p-4 min-w-[80px] shadow-lg">
                 <div id="days" className="text-3xl font-bold countdown-value">{timeLeft.days}</div>
                 <div className="text-sm">Days</div>
               </div>
-              <div className="countdown-item bg-white text-secondary rounded-lg p-4 min-w-[80px] shadow-lg">
+              <div className="countdown-item bg-white text-[#193d65] rounded-lg p-4 min-w-[80px] shadow-lg">
                 <div id="hours" className="text-3xl font-bold countdown-value">{timeLeft.hours}</div>
                 <div className="text-sm">Hours</div>
               </div>
-              <div className="countdown-item bg-white text-secondary rounded-lg p-4 min-w-[80px] shadow-lg">
+              <div className="countdown-item bg-white text-[#193d65] rounded-lg p-4 min-w-[80px] shadow-lg">
                 <div id="minutes" className="text-3xl font-bold countdown-value">{timeLeft.minutes}</div>
                 <div className="text-sm">Minutes</div>
               </div>
