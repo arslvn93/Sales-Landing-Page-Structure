@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between mb-12">
           <div className="mb-8 md:mb-0">
             <h3 className="text-2xl font-bold mb-4">
-              <span className="text-primary">Lead</span>Machine
+              <img src="/src/assets/logo-white.png" alt="SalesGenius" className="h-8" />
             </h3>
             <p className="max-w-xs text-gray-400">
               Transforming businesses with proven lead generation systems, expert guidance, and supportive community.

@@ -4,23 +4,28 @@ const HowItWorksSection = () => {
   const steps = [
     {
       number: 1,
-      title: "Lead Strategy Development",
-      description: "Establish your lead generation fundamentals, identify your ideal client profile, and craft a compelling value proposition that resonates with prospects."
+      title: "We Build Your Lead Generation Machine",
+      description: "Our team creates your entire campaign from scratch - writing compelling ad copy, building campaigns, and setting up all targeting for your specific market."
     },
     {
       number: 2,
-      title: "Lead Magnet Creation",
-      description: "Create high-value lead magnets and implement rapid testing methodologies to validate your market's response before scaling your efforts."
+      title: "We Launch Your Campaigns & Deliver Leads",
+      description: "Within 7 days, qualified buyer leads start flowing directly into your CRM - complete with contact information and buyer preferences."
     },
     {
       number: 3,
-      title: "Funnel Implementation",
-      description: "Develop your multi-channel lead generation funnel, create high-converting landing pages, and implement automated lead nurturing systems."
+      title: "We Implement Your Follow-Up System",
+      description: "Every lead automatically receives proven follow-up sequences that nurture them until they're ready to work with you - without you lifting a finger."
     },
     {
       number: 4,
-      title: "Scale & Optimize",
-      description: "Analyze performance metrics, refine your approach, and implement systems for sustainable lead generation growth and profitability."
+      title: "We Coach You On Conversion",
+      description: "Weekly coaching calls ensure you know exactly how to convert these leads into appointments and clients using our proven scripts and frameworks."
+    },
+    {
+      number: 5,
+      title: "We Optimize & Scale",
+      description: "Our team continuously monitors performance and makes adjustments to improve results while you focus on closing deals."
     }
   ];
 
@@ -141,13 +146,13 @@ const HowItWorksSection = () => {
             ref={titleRef}
             className="text-3xl md:text-4xl font-bold mb-4 text-secondary"
           >
-            How the <span className="text-primary">Program Works</span>
+            HERE'S EXACTLY HOW THE <span className="text-primary">6-MONTH LEAD MACHINE</span> WORKS
           </h2>
           <p 
             ref={descriptionRef}
             className="text-lg max-w-3xl mx-auto text-gray-600"
           >
-            Our proven system guides you through each critical stage of building your lead generation machine, from strategy to implementation.
+            Spring Special: Ambitious Agent Lead Machine 6-Month Fast-Track System
           </p>
         </div>
         
