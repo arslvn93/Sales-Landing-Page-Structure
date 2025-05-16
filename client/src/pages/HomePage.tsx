@@ -51,9 +51,6 @@ const HomePage = () => {
       {/* Sales Letter Section - Traditional sales letter format */}
       <SalesLetterSection />
       
-      {/* Why We're Offering This Section with performance metrics */}
-      <WhyOfferingSection />
-      
       {/* Social Proof / Testimonials Section moved up */}
       <TestimonialsSection />
       

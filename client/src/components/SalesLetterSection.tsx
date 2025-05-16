@@ -107,7 +107,7 @@ const SalesLetterSection = () => {
           "POSSIBLY THE BEST DEAL WE'VE EVER OFFERED FOR <span className="text-primary">REAL ESTATE AGENTS</span> WHO WANT TO FINISH 2025 STRONG"
         </h2>
         
-        {/* Performance Metrics Box (Similar to book image in example) */}
+        {/* Performance Metrics Box After Headline */}
         <div className="flex justify-center mb-16">
           <div className="bg-secondary text-white p-8 rounded-xl max-w-4xl mx-auto shadow-xl">
             <h3 className="text-xl font-bold mb-6 border-b border-white/20 pb-4 text-center">
@@ -134,6 +134,29 @@ const SalesLetterSection = () => {
                 <div className="text-3xl font-bold text-white mb-1">3.7% CLICK</div>
                 <p className="text-sm font-medium mb-1">RATE</p>
                 <p className="text-xs">4.1x HIGHER than industry average of 0.9%</p>
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="text-center">
+                <div className="text-4xl text-accent mb-2">🚀</div>
+                <div className="text-3xl font-bold text-white mb-1">76% OF AGENTS</div>
+                <p className="text-sm font-medium mb-1">see cost-per-lead</p>
+                <p className="text-xs">improvements within 90 days</p>
+              </div>
+              
+              <div className="text-center">
+                <div className="text-4xl text-accent mb-2">👁️</div>
+                <div className="text-3xl font-bold text-white mb-1">20,000+</div>
+                <p className="text-sm font-medium mb-1">MONTHLY AD</p>
+                <p className="text-xs">VIEWS for the average agent</p>
+              </div>
+              
+              <div className="text-center">
+                <div className="text-4xl text-accent mb-2">📊</div>
+                <div className="text-3xl font-bold text-white mb-1">$11.80 AVERAGE</div>
+                <p className="text-sm font-medium mb-1">COST PER LEAD</p>
+                <p className="text-xs">across all agents (55% below industry average)</p>
               </div>
             </div>
           </div>
@@ -198,20 +221,37 @@ const SalesLetterSection = () => {
           
           <p className="text-center">The only difference? You're only committing to what's left of 2025.</p>
           
-          <div className="bg-primary/10 border-2 border-primary rounded-xl p-6 shadow-lg mt-8">
+          <div className="border-2 border-primary rounded-xl p-6 shadow-lg mt-8 bg-orange-50">
             <div className="flex items-center mb-4">
-              <div className="text-4xl mr-4">
-                🛡️
+              <div className="text-primary text-4xl mr-4">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 3.33398L35 8.33398V18.334C35 27.084 28.9167 35.2507 20 37.5007C11.0833 35.2507 5 27.084 5 18.334V8.33398L20 3.33398Z" fill="#FF5C00"/>
+                  <path d="M20 17.834L12.5 17.834V12.834L20 12.834L27.5 12.834V17.834L20 17.834Z" fill="white"/>
+                </svg>
               </div>
-              <h3 className="text-xl font-bold text-secondary">
-                And we're backing this with a guarantee no other company will match:
+              <h3 className="text-2xl font-bold text-secondary">
+                LEADS IN <span className="text-primary">7 DAYS</span> OR FREE
               </h3>
             </div>
             
-            <p className="text-lg font-bold text-center bg-yellow-200 p-3 rounded-lg my-4">
-              If we don't deliver actual leads to your CRM within 7 days, you get a complete refund.
+            <p className="text-lg mb-4">
+              If we don't generate qualified buyer leads for you within the first 7 days, you get the first month completely free. No questions asked.
             </p>
-            <p className="mt-2 italic">Because if we can't deliver results immediately, how could we possibly help you hit your 2025 targets?</p>
+            
+            <ul className="space-y-2">
+              <li className="flex items-start">
+                <span className="text-primary mt-1 mr-2 font-bold">●</span>
+                <span><strong>Performance Guarantee:</strong> We deliver quality leads or you don't pay</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-primary mt-1 mr-2 font-bold">●</span>
+                <span><strong>Quality Assurance:</strong> All leads pre-qualified and verified</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-primary mt-1 mr-2 font-bold">●</span>
+                <span><strong>30-Day Satisfaction:</strong> Full refund if you're not completely satisfied</span>
+              </li>
+            </ul>
           </div>
           
           <h4 className="font-bold text-xl mt-12 flex items-center">
