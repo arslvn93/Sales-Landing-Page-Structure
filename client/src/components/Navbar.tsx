@@ -34,40 +34,40 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`bg-white py-4 px-6 shadow-sm sticky top-0 z-50 transition-all ${scrolled ? "shadow-md" : ""}`}>
+    <nav className={`bg-[#193d65] py-4 px-6 shadow-sm sticky top-0 z-50 transition-all ${scrolled ? "shadow-md" : ""}`}>
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-2xl font-heading font-bold">
-          <img src="/attached_assets/SG LOGO - Black Text.png" alt="SalesGenius" className="h-8" />
+          <img src="/attached_assets/SG LOGO - White Text.png" alt="SalesGenius" className="h-8" />
         </Link>
         <div className="hidden md:flex items-center space-x-8">
           <button 
             onClick={() => scrollToSection("how-it-works")} 
-            className="text-secondary hover:text-primary font-medium transition"
+            className="text-white hover:text-[#1c65b8] font-medium transition"
           >
             How It Works
           </button>
           <button 
             onClick={() => scrollToSection("features")} 
-            className="text-secondary hover:text-primary font-medium transition"
+            className="text-white hover:text-[#1c65b8] font-medium transition"
           >
             Features
           </button>
           <button 
             onClick={() => scrollToSection("pricing")} 
-            className="text-secondary hover:text-primary font-medium transition"
+            className="text-white hover:text-[#1c65b8] font-medium transition"
           >
             Pricing
           </button>
           <button 
             onClick={() => scrollToSection("testimonials")} 
-            className="text-secondary hover:text-primary font-medium transition"
+            className="text-white hover:text-[#1c65b8] font-medium transition"
           >
             Testimonials
           </button>
         </div>
         <button 
           onClick={() => scrollToSection("cta")} 
-          className="hidden md:block bg-primary hover:bg-primary/90 text-white font-bold py-3 px-6 rounded-lg transition shadow-md"
+          className="hidden md:block bg-white hover:bg-[#1c65b8] text-[#193d65] hover:text-white font-bold py-3 px-6 rounded transition shadow-md"
         >
           Get 6-Month Lead Machine
         </button>
