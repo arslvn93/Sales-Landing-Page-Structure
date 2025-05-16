@@ -15,6 +15,15 @@ const ComparisonSection = () => {
   
   type ComparisonValue = boolean | TextValue | CheckValue;
   
+  // Helper function to safely access value property
+  const getValue = (item: ComparisonValue): string | undefined => {
+    if (typeof item === 'boolean') return undefined;
+    if ('value' in item) {
+      return typeof item.value === 'string' ? item.value : undefined;
+    }
+    return undefined;
+  };
+  
   interface ComparisonRow {
     feature: string;
     diy: ComparisonValue;
@@ -221,12 +230,12 @@ const ComparisonSection = () => {
   };
   
   return (
-    <section id="pricing" className="bg-white py-20">
+    <section id="pricing" className="bg-[#f5f5f5] py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 
             ref={titleRef}
-            className="text-3xl md:text-4xl font-bold mb-4 text-secondary"
+            className="text-3xl md:text-4xl font-bold mb-4 text-[#193d65]"
           >
             WHY <span className="text-primary">AMBITIOUS AGENTS</span> CHOOSE US
           </h2>
@@ -244,11 +253,11 @@ const ComparisonSection = () => {
         >
           <table className="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden shadow-lg">
             <thead>
-              <tr className="bg-secondary text-white">
+              <tr className="bg-[#193d65] text-white">
                 <th className="py-4 px-6 text-left">Features</th>
                 <th className="py-4 px-6 text-center">DIY Approach</th>
                 <th className="py-4 px-6 text-center">Generic Lead Gen Companies</th>
-                <th className="py-4 px-6 text-center bg-primary">6-Month Lead Machine</th>
+                <th className="py-4 px-6 text-center bg-[#1c65b8]">6-Month Lead Machine</th>
               </tr>
             </thead>
             <tbody>
@@ -268,19 +277,19 @@ const ComparisonSection = () => {
                      row.feature === "Follow-Up System" ||
                      row.feature === "Learning Curve" ? (
                       <div className="flex flex-col">
-                        <span>{row.diy.value}</span>
-                        {(row.diy.value === "None" || row.diy.value.includes("Not Built")) && 
+                        <span>{getValue(row.diy)}</span>
+                        {(getValue(row.diy) === "None" || getValue(row.diy)?.includes("Not Built")) && 
                           <i className="fas fa-times text-red-500 text-xl mt-1"></i>
                         }
                       </div>
                     ) : (
-                      row.diy.value === "None" || row.diy.value === "No Guarantee" || row.diy.value === "DIY Only" ? (
+                      getValue(row.diy) === "None" || getValue(row.diy) === "No Guarantee" || getValue(row.diy) === "DIY Only" ? (
                         <div className="flex flex-col">
                           <i className="fas fa-times text-red-500 text-xl"></i>
-                          <span className="text-sm mt-1">{row.diy.value}</span>
+                          <span className="text-sm mt-1">{getValue(row.diy)}</span>
                         </div>
                       ) : (
-                        <span>{row.diy.value}</span>
+                        <span>{getValue(row.diy)}</span>
                       )
                     )}
                   </td>
