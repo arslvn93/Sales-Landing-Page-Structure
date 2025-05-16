@@ -139,108 +139,129 @@ const SalesLetterSection = () => {
           </div>
         </div>
         
-        {/* Sales Letter Content */}
+        {/* Sales Letter Content - Modern Style with Emojis and Highlights */}
         <div 
           ref={letterContentRef}
           className="max-w-3xl mx-auto text-lg text-gray-700 space-y-6"
         >
-          <p className="font-bold text-xl text-center text-secondary">Dear Real Estate Agent Who Wants to Make 2025 Your Best Year Yet,</p>
+          <p className="font-bold text-xl text-center text-secondary">👋 Dear Real Estate Agent Who Wants to Make 2025 Your Best Year Yet,</p>
           
-          <p>Let me ask you something important:</p>
+          <p className="text-center">Let me ask you something important:</p>
           
-          <p className="font-bold text-center">What's your plan to hit your sales targets before the end of 2025?</p>
+          <p className="font-bold text-2xl text-center bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent my-8">
+            What's your plan to hit your sales targets before the end of 2025?
+          </p>
           
-          <p>With just 6 months left in the year, the clock is ticking. And if you're like most agents we talk to, you're looking at your numbers and thinking:</p>
+          <p>With just 6 months left in the year, the ⏰ clock is ticking. And if you're like most agents we talk to, you're looking at your numbers and thinking:</p>
           
-          <p className="italic text-center">"I need to make something happen... FAST."</p>
+          <div className="bg-yellow-100 p-4 rounded-xl my-8 text-center shadow-sm">
+            <p className="italic text-xl font-semibold text-secondary">"I need to make something happen... FAST."</p>
+          </div>
           
           <p>That's exactly why we've created this special, limited-time opportunity that you won't see again this year.</p>
           
-          <h3 className="text-2xl font-bold text-primary text-center mt-10 mb-4">Introducing: The 6-Month Lead Machine</h3>
+          <h3 className="text-2xl font-bold text-primary text-center mt-10 mb-4">
+            🚀 Introducing: The 6-Month Lead Machine
+          </h3>
           
           <p className="text-center">A rare chance to get our proven lead generation system working for you for the next 6 months – specifically designed to help you crush your 2025 goals before the year ends.</p>
           
-          <div className="bg-secondary/5 p-6 rounded-lg border-l-4 border-primary mt-8">
-            <h4 className="font-bold text-xl mb-2">Here's the situation:</h4>
-            <p>Our standard program is a comprehensive 12-month system that agents love. It works, it's reliable, and it's what has generated 33.7 LEADS PER MONTH for our typical agent.</p>
+          <div className="bg-secondary/5 p-6 rounded-xl border-2 border-yellow-300 mt-8 shadow-sm">
+            <h4 className="font-bold text-xl mb-2 flex items-center">
+              <span className="text-2xl mr-2">💡</span> Here's the situation:
+            </h4>
+            <p>Our standard program is a comprehensive 12-month system that agents love. It works, it's reliable, and it's what has generated <mark className="bg-yellow-200 px-1">33.7 LEADS PER MONTH</mark> for our typical agent.</p>
             <p className="mt-4">But we understand something important: with only 6 months left in 2025, you might be hesitant to commit to a full year right now.</p>
-            <p className="font-bold mt-4">You need results BEFORE December 31st. Not sometime next year.</p>
+            <p className="font-bold mt-4 bg-yellow-100 p-2 rounded">⚠️ You need results BEFORE December 31st. Not sometime next year.</p>
           </div>
           
           <p>That's why, for a very limited time (and for just 6 agents), we're offering something we've never done before: our complete lead generation system for exactly the 6 months remaining in 2025.</p>
           
-          <p className="font-bold">This isn't a watered-down version of our program.</p>
+          <p className="font-bold text-center text-primary text-xl my-4">👉 This isn't a watered-down version of our program.</p>
           
           <p>You'll get the EXACT SAME system that's delivering:</p>
           
-          <ul className="list-none space-y-2 pl-6">
-            <li className="flex items-start">
-              <i className="fas fa-check-circle text-primary mt-1 mr-2"></i>
-              <span><strong>$6.20 COST PER LEAD</strong> in our most efficient campaigns</span>
+          <ul className="list-none space-y-4 pl-6 my-8">
+            <li className="flex items-start bg-yellow-50 p-3 rounded-lg">
+              <span className="text-2xl mr-3">💰</span>
+              <span><strong className="text-primary">$6.20 COST PER LEAD</strong> in our most efficient campaigns</span>
             </li>
-            <li className="flex items-start">
-              <i className="fas fa-check-circle text-primary mt-1 mr-2"></i>
-              <span><strong>20,000+ MONTHLY AD VIEWS</strong> for the average agent</span>
+            <li className="flex items-start bg-yellow-50 p-3 rounded-lg">
+              <span className="text-2xl mr-3">👁️</span>
+              <span><strong className="text-primary">20,000+ MONTHLY AD VIEWS</strong> for the average agent</span>
             </li>
-            <li className="flex items-start">
-              <i className="fas fa-check-circle text-primary mt-1 mr-2"></i>
-              <span><strong>3.7% CLICK RATE</strong> (that's 4.1x higher than the industry average of 0.9%)</span>
+            <li className="flex items-start bg-yellow-50 p-3 rounded-lg">
+              <span className="text-2xl mr-3">📈</span>
+              <span><strong className="text-primary">3.7% CLICK RATE</strong> (that's 4.1x higher than the industry average of 0.9%)</span>
             </li>
           </ul>
           
-          <p>The only difference? You're only committing to what's left of 2025.</p>
+          <p className="text-center">The only difference? You're only committing to what's left of 2025.</p>
           
           <div className="bg-primary/10 border-2 border-primary rounded-xl p-6 shadow-lg mt-8">
             <div className="flex items-center mb-4">
-              <div className="text-3xl text-primary mr-4">
-                <i className="fas fa-shield-alt"></i>
+              <div className="text-4xl mr-4">
+                🛡️
               </div>
               <h3 className="text-xl font-bold text-secondary">
                 And we're backing this with a guarantee no other company will match:
               </h3>
             </div>
             
-            <p className="text-lg font-bold">If we don't deliver actual leads to your CRM within 7 days, you get a complete refund.</p>
+            <p className="text-lg font-bold text-center bg-yellow-200 p-3 rounded-lg my-4">
+              If we don't deliver actual leads to your CRM within 7 days, you get a complete refund.
+            </p>
             <p className="mt-2 italic">Because if we can't deliver results immediately, how could we possibly help you hit your 2025 targets?</p>
           </div>
           
-          <h4 className="font-bold text-xl mt-8">Why are we offering this special 6-month program right now?</h4>
+          <h4 className="font-bold text-xl mt-12 flex items-center">
+            <span className="text-2xl mr-2">🤔</span> Why are we offering this special 6-month program right now?
+          </h4>
           
           <p>Simple: The next 6 months are critical for hitting year-end goals. But they're also the months when most agents slow down their marketing, thinking "the year is almost over anyway."</p>
           
-          <p className="font-bold">That creates a MASSIVE opportunity for the agents who stay aggressive while everyone else pulls back.</p>
+          <div className="bg-yellow-100 p-4 rounded-xl my-6">
+            <p className="font-bold">That creates a MASSIVE opportunity for the agents who stay aggressive while everyone else pulls back.</p>
+          </div>
           
           <p>Your competitors are going to ease off the gas. They'll wait until January to ramp up again.</p>
           
           <p>Meanwhile, you'll be capturing the quality leads they're ignoring – setting yourself up not just to finish 2025 strong, but to have a pipeline full of buyers going into 2026.</p>
           
-          <div className="bg-gray-100 p-6 rounded-lg border-l-4 border-accent mt-8">
-            <p className="italic">Here's what one agent told us last November:</p>
-            <p className="mt-4 text-secondary">"I almost didn't sign up because it was 'late in the year.' That would have been the biggest mistake of my career. While everyone checked out for the holidays, I closed 4 transactions in December from the leads you generated, then started January with 6 deals already in the pipeline. It was like getting a 3-month head start on everyone else."</p>
+          <div className="bg-gray-100 p-6 rounded-xl border-2 border-gray-200 mt-8">
+            <p className="italic flex items-start">
+              <span className="text-2xl mr-3">💬</span>
+              Here's what one agent told us last November:
+            </p>
+            <p className="mt-4 text-secondary bg-white p-4 rounded-lg">
+              "I almost didn't sign up because it was 'late in the year.' That would have been the biggest mistake of my career. While everyone checked out for the holidays, I closed 4 transactions in December from the leads you generated, then started January with 6 deals already in the pipeline. It was like getting a 3-month head start on everyone else."
+            </p>
           </div>
           
-          <p className="font-bold text-xl text-center mt-8">This special 6-month offer is only available until all 6 spots are filled.</p>
+          <div className="font-bold text-xl text-center mt-12 bg-yellow-100 p-4 rounded-xl">
+            ⚠️ This special 6-month offer is only available until all 6 spots are filled.
+          </div>
           
           <p className="text-center">After that, we'll return to our standard 12-month program.</p>
           
           <p className="text-center">So if you're serious about making 2025 your best year yet – and building unstoppable momentum going into 2026 – this is your opportunity.</p>
           
-          <ul className="list-none space-y-2 mt-6">
-            <li className="flex items-start">
-              <i className="fas fa-check-circle text-primary mt-1 mr-2"></i>
-              <span><strong>No risk</strong> (leads in 7 days or your money back).</span>
+          <ul className="list-none space-y-4 mt-8">
+            <li className="flex items-center bg-secondary/5 p-4 rounded-lg">
+              <span className="text-2xl mr-3">✅</span>
+              <span><strong>No risk</strong> (leads in 7 days or your money back)</span>
             </li>
-            <li className="flex items-start">
-              <i className="fas fa-check-circle text-primary mt-1 mr-2"></i>
-              <span><strong>No waiting</strong> (our team implements everything within 48 hours).</span>
+            <li className="flex items-center bg-secondary/5 p-4 rounded-lg">
+              <span className="text-2xl mr-3">⏱️</span>
+              <span><strong>No waiting</strong> (our team implements everything within 48 hours)</span>
             </li>
-            <li className="flex items-start">
-              <i className="fas fa-check-circle text-primary mt-1 mr-2"></i>
-              <span><strong>No excuses</strong> (just a proven system that delivers results when you need them most).</span>
+            <li className="flex items-center bg-secondary/5 p-4 rounded-lg">
+              <span className="text-2xl mr-3">💯</span>
+              <span><strong>No excuses</strong> (just a proven system that delivers results when you need them most)</span>
             </li>
           </ul>
           
-          <div className="text-center mt-10">
+          <div className="text-center mt-12">
             <button 
               ref={ctaButtonRef}
               onClick={() => {
@@ -252,16 +273,20 @@ const SalesLetterSection = () => {
                   });
                 }
               }}
-              className="inline-block bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-lg transition shadow-lg text-xl"
+              className="inline-block bg-primary hover:bg-primary/90 text-white font-bold py-5 px-10 rounded-xl transition shadow-xl text-xl"
             >
-              SECURE YOUR SPOT NOW – ONLY 6 SPOTS REMAINING <i className="fas fa-arrow-right ml-2"></i>
+              SECURE YOUR SPOT NOW – ONLY 6 SPOTS REMAINING 🔥
             </button>
           </div>
           
-          <p className="text-center mt-8">To your success in 2025 and beyond,</p>
-          <p className="text-center font-bold">Ryan & The Lead Machine Team</p>
+          <p className="text-center mt-10">To your success in 2025 and beyond,</p>
+          <p className="text-center font-bold">Ryan & The Lead Machine Team ✌️</p>
           
-          <p className="text-center mt-8 italic text-sm">P.S. Remember, with only 6 months left in the year, every week matters. The sooner you start, the more time you have to convert leads into closings before December 31st. Don't wait until it's too late to hit your 2025 targets.</p>
+          <div className="bg-yellow-50 p-4 rounded-xl mt-8 text-center">
+            <p className="font-medium text-sm">
+              ⏰ P.S. Remember, with only 6 months left in the year, every week matters. The sooner you start, the more time you have to convert leads into closings before December 31st. Don't wait until it's too late to hit your 2025 targets.
+            </p>
+          </div>
         </div>
       </div>
     </section>
