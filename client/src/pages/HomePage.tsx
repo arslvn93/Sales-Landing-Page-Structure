@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
-import TestComponent from "@/components/TestComponent"; // Import the test component
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import WhyOfferingSection from "@/components/WhyOfferingSection";
 import ProblemSection from "@/components/ProblemSection";
 import SolutionSection from "@/components/SolutionSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
@@ -44,34 +44,37 @@ const HomePage = () => {
       {/* Navbar component */}
       <Navbar />
       
-      {/* Original HeroSection component */}
+      {/* Hero Section */}
       <HeroSection />
       
-      {/* Problem Section with new animations */}
-      <ProblemSection />
+      {/* New "Why We're Offering This" Section with guarantee */}
+      <WhyOfferingSection />
       
-      {/* Solution Section with new animations */}
-      <SolutionSection />
-      
-      {/* How It Works Section with new animations */}
-      <HowItWorksSection />
-      
-      {/* Features Section with new animations */}
-      <FeaturesSection />
-      
-      {/* Testimonials Section with new animations */}
+      {/* Social Proof / Testimonials Section moved up */}
       <TestimonialsSection />
       
-      {/* Comparison Section with new animations */}
-      <ComparisonSection />
+      {/* How It Works Section */}
+      <HowItWorksSection />
       
-      {/* Guarantee Section with new animations */}
-      <GuaranteeSection />
+      {/* Features Section (What's Included) */}
+      <FeaturesSection />
       
-      {/* Scarcity Section with new animations */}
+      {/* Scarcity/Limited Spots Section moved higher */}
       <ScarcitySection />
       
-      {/* CTA Section with new animations */}
+      {/* Value Comparison Section */}
+      <ComparisonSection />
+      
+      {/* Problem Section */}
+      <ProblemSection />
+      
+      {/* Solution Section */}
+      <SolutionSection />
+      
+      {/* Additional trust-building section */}
+      <GuaranteeSection />
+      
+      {/* CTA Section with pricing and FAQ */}
       <CtaSection />
       
       {/* Footer */}
