@@ -195,23 +195,23 @@ const CtaSection = () => {
               </h3>
               <ul className="space-y-3 text-gray-200">
                 <li className="flex items-start">
-                  <i className="fas fa-check-circle text-accent mr-3 mt-1"></i>
+                  <i className="fas fa-check-circle text-white mr-3 mt-1"></i>
                   <span>Complete Done-For-You Lead Generation System</span>
                 </li>
                 <li className="flex items-start">
-                  <i className="fas fa-check-circle text-accent mr-3 mt-1"></i>
+                  <i className="fas fa-check-circle text-white mr-3 mt-1"></i>
                   <span>Professional Ad Creation & Copywriting</span>
                 </li>
                 <li className="flex items-start">
-                  <i className="fas fa-check-circle text-accent mr-3 mt-1"></i>
+                  <i className="fas fa-check-circle text-white mr-3 mt-1"></i>
                   <span>Custom Drip Campaign Creation</span>
                 </li>
                 <li className="flex items-start">
-                  <i className="fas fa-check-circle text-accent mr-3 mt-1"></i>
+                  <i className="fas fa-check-circle text-white mr-3 mt-1"></i>
                   <span>Weekly Conversion Coaching</span>
                 </li>
                 <li className="flex items-start">
-                  <i className="fas fa-check-circle text-accent mr-3 mt-1"></i>
+                  <i className="fas fa-check-circle text-white mr-3 mt-1"></i>
                   <span>6 Months of Campaign Management</span>
                 </li>
               </ul>
@@ -258,7 +258,7 @@ const CtaSection = () => {
         <div className="mt-16 max-w-4xl mx-auto text-center">
           <h3 
             ref={faqTitleRef}
-            className="text-2xl font-bold mb-6 text-secondary"
+            className="text-2xl font-bold mb-6 text-[#193d65]"
           >
             Frequently Asked Questions
           </h3>
@@ -268,7 +268,7 @@ const CtaSection = () => {
               ref={el => faqItemRefs.current[0] = el}
               className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-300"
             >
-              <h4 className="font-bold text-lg mb-3 text-secondary">How is this different from other real estate marketing programs?</h4>
+              <h4 className="font-bold text-lg mb-3 text-[#193d65]">How is this different from other real estate marketing programs?</h4>
               <p className="text-gray-600">Most programs give you training but expect YOU to implement everything yourself. We actually set up and manage your entire lead generation system FOR YOU, with guaranteed results in your first week.</p>
             </div>
             
