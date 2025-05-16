@@ -63,16 +63,16 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="hero" className="bg-gradient-to-br from-secondary to-secondary/90 text-white py-20">
+    <section id="hero" className="bg-gradient-to-br from-[#193d65] to-[#1c65b8] text-white py-20">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0">
-            <p className="text-accent font-bold mb-2">FOR SERIOUS AGENTS ONLY:</p>
+            <p className="text-white font-bold mb-2">FOR SERIOUS AGENTS ONLY:</p>
             <h1 
               ref={titleRef} 
               className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
             >
-              Test-Drive Our Done-For-You Buyer Lead System For 6 Months With Zero Long-Term Commitment... And See Your First Leads In <span className="text-accent">7 Days Or We Pay You Back</span>
+              Test-Drive Our Done-For-You Buyer Lead System For 6 Months With Zero Long-Term Commitment... And See Your First Leads In <span className="text-white font-bold underline">7 Days Or We Pay You Back</span>
             </h1>
             <p 
               ref={subtitleRef} 
@@ -86,13 +86,13 @@ const HeroSection = () => {
             >
               <button 
                 onClick={() => scrollToSection("cta")} 
-                className="bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-lg text-center transition shadow-lg"
+                className="bg-white hover:bg-[#1c65b8] text-[#193d65] hover:text-white font-bold py-4 px-8 rounded text-center transition shadow-md"
               >
                 SECURE YOUR SPOT - ONLY 6 AVAILABLE
               </button>
               <button 
                 onClick={() => scrollToSection("how-it-works")} 
-                className="bg-white hover:bg-gray-100 text-secondary font-bold py-4 px-8 rounded-lg text-center transition"
+                className="border-2 border-white hover:bg-white text-white hover:text-[#193d65] font-bold py-4 px-8 rounded text-center transition"
               >
                 See How It Works
               </button>

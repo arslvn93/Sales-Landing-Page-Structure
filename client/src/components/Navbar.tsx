@@ -72,7 +72,7 @@ const Navbar = () => {
           Get 6-Month Lead Machine
         </button>
         <button 
-          className="md:hidden text-secondary" 
+          className="md:hidden text-white" 
           onClick={toggleMobileMenu}
           aria-label="Toggle mobile menu"
         >
@@ -85,31 +85,31 @@ const Navbar = () => {
         <div className="flex flex-col space-y-4">
           <button 
             onClick={() => scrollToSection("how-it-works")} 
-            className="text-secondary hover:text-primary font-medium transition py-2 text-left"
+            className="text-[#333333] hover:text-[#1c65b8] font-medium transition py-2 text-left"
           >
             How It Works
           </button>
           <button 
             onClick={() => scrollToSection("features")} 
-            className="text-secondary hover:text-primary font-medium transition py-2 text-left"
+            className="text-[#333333] hover:text-[#1c65b8] font-medium transition py-2 text-left"
           >
             Features
           </button>
           <button 
             onClick={() => scrollToSection("pricing")} 
-            className="text-secondary hover:text-primary font-medium transition py-2 text-left"
+            className="text-[#333333] hover:text-[#1c65b8] font-medium transition py-2 text-left"
           >
             Pricing
           </button>
           <button 
             onClick={() => scrollToSection("testimonials")} 
-            className="text-secondary hover:text-primary font-medium transition py-2 text-left"
+            className="text-[#333333] hover:text-[#1c65b8] font-medium transition py-2 text-left"
           >
             Testimonials
           </button>
           <button 
             onClick={() => scrollToSection("cta")} 
-            className="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-6 rounded-lg text-center transition shadow-md"
+            className="bg-[#193d65] hover:bg-[#1c65b8] text-white font-bold py-3 px-6 rounded text-center transition shadow-md"
           >
             Get 6-Month Lead Machine
           </button>
