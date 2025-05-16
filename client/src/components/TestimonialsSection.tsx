@@ -23,10 +23,10 @@ const TestimonialsSection = () => {
   ];
 
   const stats = [
-    { value: 10452, label: "Businesses Served" },
-    { value: 94, label: "Success Rate %" },
-    { value: 87, label: "Million $ Generated" },
-    { value: 180, label: "Days Average ROI" }
+    { value: 1823, label: "Leads in last 30 days" },
+    { value: 6, suffix: ".20", prefix: "$", label: "Cost Per Lead" },
+    { value: 764992, label: "Ad Views" },
+    { value: 0, label: "Customer Cancellations" }
   ];
   
   const titleRef = useRef<HTMLHeadingElement>(null);
@@ -157,8 +157,9 @@ const TestimonialsSection = () => {
             ref={descriptionRef}
             className="text-lg max-w-3xl mx-auto text-gray-300"
           >
-            Join the thousands of businesses who have transformed their lead generation with our program.
+            Join the thousands of real estate agents who have transformed their lead generation with our program.
           </p>
+          <h3 className="text-xl font-semibold mt-8 mb-4">Last 30 Day Stats (April-May 2025)</h3>
         </div>
         
         <div className="flex flex-wrap -mx-4">
@@ -202,7 +203,11 @@ const TestimonialsSection = () => {
                 ref={el => statRefs.current[index] = el}
                 className="py-4"
               >
-                <div className="text-4xl font-bold text-accent counter" data-count={stat.value}>0</div>
+                <div className="text-4xl font-bold text-accent">
+                  {stat.prefix && <span>{stat.prefix}</span>}
+                  <span className="counter" data-count={stat.value}>0</span>
+                  {stat.suffix && <span>{stat.suffix}</span>}
+                </div>
                 <p className="text-gray-300">{stat.label}</p>
               </div>
             ))}

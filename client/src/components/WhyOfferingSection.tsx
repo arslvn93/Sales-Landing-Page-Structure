@@ -155,52 +155,28 @@ const WhyOfferingSection = () => {
             className="md:w-1/2 bg-secondary text-white rounded-xl p-8 shadow-xl"
           >
             <h3 className="text-2xl font-bold mb-6 border-b border-white/20 pb-4">
-              REAL NUMBERS FROM REAL AGENTS IN THE LAST 90 DAYS:
+              WHY REAL ESTATE AGENTS CHOOSE US:
             </h3>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="text-center">
-                <div className="text-4xl text-accent mb-2">🎯</div>
-                <div className="text-3xl font-bold text-white mb-1">33.7 LEADS</div>
-                <p className="text-sm font-medium mb-1">PER MONTH</p>
-                <p className="text-xs">for the typical agent in our program</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+              <div className="bg-white/10 p-6 rounded-lg">
+                <div className="text-2xl font-bold text-accent mb-2">Transparent Pricing</div>
+                <p className="text-lg">No hidden fees, no long-term contracts, just clear and predictable costs with ROI you can measure.</p>
               </div>
               
-              <div className="text-center">
-                <div className="text-4xl text-accent mb-2">💰</div>
-                <div className="text-3xl font-bold text-white mb-1">$6.20 COST</div>
-                <p className="text-sm font-medium mb-1">PER LEAD</p>
-                <p className="text-xs">in our most efficient campaigns</p>
+              <div className="bg-white/10 p-6 rounded-lg">
+                <div className="text-2xl font-bold text-accent mb-2">Real Estate Specific</div>
+                <p className="text-lg">Campaigns designed specifically for real estate agents to attract high-intent buyers and sellers.</p>
               </div>
               
-              <div className="text-center">
-                <div className="text-4xl text-accent mb-2">📈</div>
-                <div className="text-3xl font-bold text-white mb-1">3.7% CLICK</div>
-                <p className="text-sm font-medium mb-1">RATE</p>
-                <p className="text-xs">4.1x HIGHER than industry average of 0.9%</p>
-              </div>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="text-center">
-                <div className="text-4xl text-accent mb-2">🚀</div>
-                <div className="text-3xl font-bold text-white mb-1">76% OF AGENTS</div>
-                <p className="text-sm font-medium mb-1">see cost-per-lead</p>
-                <p className="text-xs">improvements within 90 days</p>
+              <div className="bg-white/10 p-6 rounded-lg">
+                <div className="text-2xl font-bold text-accent mb-2">Proven System</div>
+                <p className="text-lg">A tested and refined approach that has worked for thousands of agents across the country.</p>
               </div>
               
-              <div className="text-center">
-                <div className="text-4xl text-accent mb-2">👁️</div>
-                <div className="text-3xl font-bold text-white mb-1">20,000+</div>
-                <p className="text-sm font-medium mb-1">MONTHLY AD</p>
-                <p className="text-xs">VIEWS for the average agent</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="text-4xl text-accent mb-2">📊</div>
-                <div className="text-3xl font-bold text-white mb-1">$11.80 AVERAGE</div>
-                <p className="text-sm font-medium mb-1">COST PER LEAD</p>
-                <p className="text-xs">across all agents (55% below industry average)</p>
+              <div className="bg-white/10 p-6 rounded-lg">
+                <div className="text-2xl font-bold text-accent mb-2">Expert Support</div>
+                <p className="text-lg">Our team of specialists provides ongoing support to maximize your campaign performance.</p>
               </div>
             </div>
             
