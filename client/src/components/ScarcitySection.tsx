@@ -201,7 +201,7 @@ const ScarcitySection = () => {
           </h2>
           <p 
             ref={descriptionRef}
-            className="text-lg max-w-3xl mx-auto text-gray-300"
+            className="text-lg max-w-3xl mx-auto text-white"
           >
             To ensure personalized attention and maintain the highest level of service, we only accept a limited number of agents for each cohort.
           </p>
@@ -246,8 +246,8 @@ const ScarcitySection = () => {
             ref={spotsBoxRef}
             className="bg-[#333333]/70 rounded-lg p-6 text-center"
           >
-            <h4 className="text-xl font-bold mb-2">Only <span className="text-white font-extrabold underline">6 Spots</span> Remaining!</h4>
-            <p className="mb-4">For the June 1st cohort - don't miss out!</p>
+            <h4 className="text-xl font-bold mb-2 text-white">Only <span className="text-white font-extrabold underline">6 Spots</span> Remaining!</h4>
+            <p className="mb-4 text-white">For the June 1st cohort - don't miss out!</p>
             <div className="w-full bg-gray-700 rounded-full h-4 mb-4 overflow-hidden">
               <div 
                 ref={progressBarRef}
@@ -267,7 +267,7 @@ const ScarcitySection = () => {
         <div className="text-center">
           <p 
             ref={noteRef}
-            className="text-lg mb-6"
+            className="text-lg mb-6 text-white"
           >
             <i className="fas fa-info-circle mr-2"></i> We've never offered this program before and <span className="text-white font-bold underline">we're not sure if we'll offer it again</span>.
           </p>

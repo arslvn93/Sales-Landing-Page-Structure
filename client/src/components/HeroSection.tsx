@@ -70,13 +70,13 @@ const HeroSection = () => {
             <p className="text-white font-bold mb-2">FOR SERIOUS AGENTS ONLY:</p>
             <h1 
               ref={titleRef} 
-              className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
+              className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-white"
             >
               Test-Drive Our Done-For-You Buyer Lead System For 6 Months With Zero Long-Term Commitment... And See Your First Leads In <span className="text-white font-bold underline">7 Days Or We Pay You Back</span>
             </h1>
             <p 
               ref={subtitleRef} 
-              className="text-xl mb-8 text-gray-100"
+              className="text-xl mb-8 text-white"
             >
               Need more buyer leads but hesitant to commit to a long-term coaching program? For the first time ever, we're offering our proven lead system as a 6-month trial. Works with your current CRM and guarantees buyer leads in 7 days - no 12-month contract required.
             </p>
