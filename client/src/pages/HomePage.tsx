@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import SalesLetterSection from "@/components/SalesLetterSection";
 import WhyOfferingSection from "@/components/WhyOfferingSection";
 import ProblemSection from "@/components/ProblemSection";
 import SolutionSection from "@/components/SolutionSection";
@@ -47,7 +48,10 @@ const HomePage = () => {
       {/* Hero Section */}
       <HeroSection />
       
-      {/* New "Why We're Offering This" Section with guarantee */}
+      {/* Sales Letter Section - Traditional sales letter format */}
+      <SalesLetterSection />
+      
+      {/* Why We're Offering This Section with performance metrics */}
       <WhyOfferingSection />
       
       {/* Social Proof / Testimonials Section moved up */}
