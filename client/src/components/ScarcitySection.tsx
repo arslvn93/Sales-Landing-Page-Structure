@@ -235,7 +235,7 @@ const ScarcitySection = () => {
                 <div id="minutes" className="text-3xl font-bold countdown-value">{timeLeft.minutes}</div>
                 <div className="text-sm">Minutes</div>
               </div>
-              <div className="countdown-item bg-white text-secondary rounded-lg p-4 min-w-[80px] shadow-lg">
+              <div className="countdown-item bg-white text-[#193d65] rounded-lg p-4 min-w-[80px] shadow-lg">
                 <div id="seconds" className="text-3xl font-bold countdown-value">{timeLeft.seconds}</div>
                 <div className="text-sm">Seconds</div>
               </div>
@@ -244,20 +244,20 @@ const ScarcitySection = () => {
           
           <div 
             ref={spotsBoxRef}
-            className="bg-secondary/70 rounded-lg p-6 text-center"
+            className="bg-[#193d65]/70 rounded-lg p-6 text-center"
           >
-            <h4 className="text-xl font-bold mb-2">Only <span className="text-accent">6 Spots</span> Remaining!</h4>
+            <h4 className="text-xl font-bold mb-2">Only <span className="text-white font-extrabold underline">6 Spots</span> Remaining!</h4>
             <p className="mb-4">For the June 1st cohort - don't miss out!</p>
             <div className="w-full bg-gray-700 rounded-full h-4 mb-4 overflow-hidden">
               <div 
                 ref={progressBarRef}
-                className="bg-accent h-4 rounded-full" 
+                className="bg-[#1c65b8] h-4 rounded-full" 
                 style={{ width: "70%" }}
               ></div>
             </div>
             <button 
               onClick={() => scrollToSection("cta")} 
-              className="inline-block bg-accent hover:bg-accent/90 text-secondary font-bold py-4 px-8 rounded-lg transition shadow-md"
+              className="inline-block bg-white hover:bg-gray-100 text-[#193d65] font-bold py-4 px-8 rounded-lg transition shadow-md"
             >
               Reserve Your Spot Now
             </button>
@@ -269,7 +269,7 @@ const ScarcitySection = () => {
             ref={noteRef}
             className="text-lg mb-6"
           >
-            <i className="fas fa-info-circle mr-2"></i> We've never offered this program before and <span className="text-accent font-bold">we're not sure if we'll offer it again</span>.
+            <i className="fas fa-info-circle mr-2"></i> We've never offered this program before and <span className="text-white font-bold underline">we're not sure if we'll offer it again</span>.
           </p>
         </div>
       </div>
