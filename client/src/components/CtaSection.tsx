@@ -222,18 +222,18 @@ const CtaSection = () => {
               className="bg-white/10 backdrop-blur-sm p-6 rounded-lg"
             >
               <h3 className="text-xl font-bold mb-4 flex items-center">
-                <span className="bg-accent text-secondary w-8 h-8 flex items-center justify-center rounded-full mr-3">2</span>
+                <span className="bg-white text-[#193d65] w-8 h-8 flex items-center justify-center rounded-full mr-3">2</span>
                 Spring Special Pricing
               </h3>
               <div className="mb-6">
                 <p className="text-gray-200 mb-2">Initial payment:</p>
                 <p className="text-3xl font-bold">$3,000 <span className="text-sm font-normal">USD</span></p>
-                <p className="text-accent text-sm">Save $4,000 off the standard price</p>
+                <p className="text-white text-sm font-semibold">Save $4,000 off the standard price</p>
               </div>
               <div>
                 <p className="text-gray-200 mb-2">Monthly payments:</p>
                 <p className="text-xl">$500/month <span className="text-sm font-normal">for 6 months</span></p>
-                <p className="text-accent text-sm mt-2">"Leads in 7 Days" Guarantee</p>
+                <p className="text-white text-sm font-semibold mt-2">"Leads in 7 Days" Guarantee</p>
               </div>
             </div>
           </div>
@@ -242,7 +242,7 @@ const CtaSection = () => {
             <a 
               ref={ctaButtonRef}
               href="#" 
-              className="inline-block bg-accent hover:bg-accent/90 text-secondary font-bold py-4 px-10 rounded-lg text-xl transition shadow-lg mb-6"
+              className="inline-block bg-white hover:bg-gray-100 text-[#193d65] font-bold py-4 px-10 rounded-lg text-xl transition shadow-lg mb-6"
             >
               SECURE YOUR SPOT - ONLY 6 AVAILABLE <i className="fas fa-arrow-right ml-2"></i>
             </a>
@@ -276,7 +276,7 @@ const CtaSection = () => {
               ref={el => faqItemRefs.current[1] = el}
               className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-300"
             >
-              <h4 className="font-bold text-lg mb-3 text-secondary">Do I need technical skills to make this work?</h4>
+              <h4 className="font-bold text-lg mb-3 text-[#193d65]">Do I need technical skills to make this work?</h4>
               <p className="text-gray-600">Absolutely not! That's the whole point - our team handles all the technical aspects for you. We create the ads, set up the campaigns, build the automation, and manage everything. You focus on converting the leads we deliver.</p>
             </div>
             
@@ -284,7 +284,7 @@ const CtaSection = () => {
               ref={el => faqItemRefs.current[2] = el}
               className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-300"
             >
-              <h4 className="font-bold text-lg mb-3 text-secondary">What if I don't have a big advertising budget?</h4>
+              <h4 className="font-bold text-lg mb-3 text-[#193d65]">What if I don't have a big advertising budget?</h4>
               <p className="text-gray-600">Our system is designed to be highly efficient with your ads. Most clients spend a maximum of $500 per month to see a great ROI.</p>
             </div>
             
@@ -292,7 +292,7 @@ const CtaSection = () => {
               ref={el => faqItemRefs.current[3] = el}
               className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-300"
             >
-              <h4 className="font-bold text-lg mb-3 text-secondary">How exactly does your "Leads in 7 Days" guarantee work?</h4>
+              <h4 className="font-bold text-lg mb-3 text-[#193d65]">How exactly does your "Leads in 7 Days" guarantee work?</h4>
               <p className="text-gray-600">It's simple: if we don't deliver actual leads to your CRM within 7 days of launching your campaign, you get a full refund of your initial payment. We make this guarantee because our system has been proven time and again with agents just like you.</p>
             </div>
           </div>
