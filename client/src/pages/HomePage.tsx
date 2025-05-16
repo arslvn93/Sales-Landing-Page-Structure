@@ -41,10 +41,7 @@ const HomePage = () => {
 
   return (
     <div className="bg-white">
-      {/* Add test component first to verify rendering */}
-      <TestComponent />
-      
-      {/* Add actual Navbar component */}
+      {/* Navbar component */}
       <Navbar />
       
       {/* Original HeroSection component */}
