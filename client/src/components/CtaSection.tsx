@@ -172,13 +172,13 @@ const CtaSection = () => {
           <div className="text-center mb-8">
             <h2 
               ref={titleRef}
-              className="text-3xl md:text-4xl font-bold mb-4"
+              className="text-3xl md:text-4xl font-bold mb-4 text-white"
             >
               READY TO <span className="text-white font-extrabold underline">TRANSFORM</span> YOUR REAL ESTATE BUSINESS?
             </h2>
             <p 
               ref={descriptionRef}
-              className="text-xl mb-8"
+              className="text-xl mb-8 text-white"
             >
               Spring Special: Ambitious Agent Lead Machine 6-Month Fast-Track System
             </p>

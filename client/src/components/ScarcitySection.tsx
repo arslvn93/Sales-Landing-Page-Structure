@@ -195,7 +195,7 @@ const ScarcitySection = () => {
         <div className="text-center mb-12">
           <h2 
             ref={titleRef}
-            className="text-3xl md:text-4xl font-bold mb-4"
+            className="text-3xl md:text-4xl font-bold mb-4 text-white"
           >
             Limited <span className="text-white font-extrabold underline">Enrollment</span>
           </h2>

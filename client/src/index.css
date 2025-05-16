@@ -101,7 +101,18 @@
 
 /* Style for dark background sections */
 @layer utilities {
-  .dark-bg * {
+  .dark-bg *,
+  .bg-\[\#1c1c1c\] h2,
+  .bg-\[\#1c1c1c\] h3,
+  .bg-\[\#1c1c1c\] p,
+  .bg-\[\#1c1c1c\] li,
+  .bg-\[\#1c1c1c\] span:not(.text-accent),
+  .bg-primary h2,
+  .bg-primary h3,
+  .bg-primary p,
+  .bg-gradient-to-br h2,
+  .bg-gradient-to-br h3,
+  .bg-gradient-to-br p {
     color: white;
   }
 }
