@@ -87,7 +87,7 @@ const WhyOfferingSection = () => {
         {/* Social Proof Banner at top */}
         <div className="bg-accent/10 py-4 px-6 rounded-lg mb-12 text-center">
           <p className="text-xl font-bold text-secondary">
-            <span className="text-primary">PROVEN RESULTS:</span> Over 12,875 qualified buyer leads generated in the last 12 months for agents just like you
+            <span className="text-primary">PROVEN RESULTS:</span> 1893 Buyer Leads Generated For Agents Just Like You In The Last 30 Days
           </p>
         </div>
         
@@ -155,28 +155,52 @@ const WhyOfferingSection = () => {
             className="md:w-1/2 bg-secondary text-white rounded-xl p-8 shadow-xl"
           >
             <h3 className="text-2xl font-bold mb-6 border-b border-white/20 pb-4">
-              REAL NUMBERS FROM REAL AGENTS:
+              REAL NUMBERS FROM REAL AGENTS IN THE LAST 90 DAYS:
             </h3>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               <div className="text-center">
-                <div className="text-5xl font-bold text-accent mb-2">15-25</div>
-                <p className="text-lg">Qualified buyer leads per month</p>
+                <div className="text-4xl text-accent mb-2">🎯</div>
+                <div className="text-3xl font-bold text-white mb-1">33.7 LEADS</div>
+                <p className="text-sm font-medium mb-1">PER MONTH</p>
+                <p className="text-xs">for the typical agent in our program</p>
               </div>
               
               <div className="text-center">
-                <div className="text-5xl font-bold text-accent mb-2">30-40%</div>
-                <p className="text-lg">Lead-to-appointment conversion rate</p>
+                <div className="text-4xl text-accent mb-2">💰</div>
+                <div className="text-3xl font-bold text-white mb-1">$6.20 COST</div>
+                <p className="text-sm font-medium mb-1">PER LEAD</p>
+                <p className="text-xs">in our most efficient campaigns</p>
               </div>
               
               <div className="text-center">
-                <div className="text-5xl font-bold text-accent mb-2">$11,250</div>
-                <p className="text-lg">Average commission per closed deal</p>
+                <div className="text-4xl text-accent mb-2">📈</div>
+                <div className="text-3xl font-bold text-white mb-1">3.7% CLICK</div>
+                <p className="text-sm font-medium mb-1">RATE</p>
+                <p className="text-xs">4.1x HIGHER than industry average of 0.9%</p>
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="text-center">
+                <div className="text-4xl text-accent mb-2">🚀</div>
+                <div className="text-3xl font-bold text-white mb-1">76% OF AGENTS</div>
+                <p className="text-sm font-medium mb-1">see cost-per-lead</p>
+                <p className="text-xs">improvements within 90 days</p>
               </div>
               
               <div className="text-center">
-                <div className="text-5xl font-bold text-accent mb-2">4.2X</div>
-                <p className="text-lg">Average return on investment</p>
+                <div className="text-4xl text-accent mb-2">👁️</div>
+                <div className="text-3xl font-bold text-white mb-1">20,000+</div>
+                <p className="text-sm font-medium mb-1">MONTHLY AD</p>
+                <p className="text-xs">VIEWS for the average agent</p>
+              </div>
+              
+              <div className="text-center">
+                <div className="text-4xl text-accent mb-2">📊</div>
+                <div className="text-3xl font-bold text-white mb-1">$11.80 AVERAGE</div>
+                <p className="text-sm font-medium mb-1">COST PER LEAD</p>
+                <p className="text-xs">across all agents (55% below industry average)</p>
               </div>
             </div>
             
