@@ -1,3 +1,5 @@
+import { useEffect, useRef } from "react";
+
 const TestimonialsSection = () => {
   const testimonials = [
     {
@@ -27,12 +29,134 @@ const TestimonialsSection = () => {
     { value: 180, label: "Days Average ROI" }
   ];
   
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const descriptionRef = useRef<HTMLParagraphElement>(null);
+  const testimonialRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const statRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  // Function to animate counting up to a target number
+  const animateCounter = (element: HTMLElement, target: number) => {
+    let start = 0;
+    const duration = 2000; // ms
+    const increment = Math.ceil(target / (duration / 16)); // 16ms is roughly one frame at 60fps
+    
+    const updateCounter = () => {
+      start += increment;
+      if (start >= target) {
+        element.textContent = target.toString();
+      } else {
+        element.textContent = start.toString();
+        requestAnimationFrame(updateCounter);
+      }
+    };
+    
+    updateCounter();
+  };
+
+  useEffect(() => {
+    // Initial setup - hide elements
+    if (titleRef.current) {
+      titleRef.current.style.opacity = "0";
+      titleRef.current.style.transform = "translateY(30px)";
+    }
+    
+    if (descriptionRef.current) {
+      descriptionRef.current.style.opacity = "0";
+      descriptionRef.current.style.transform = "translateY(30px)";
+    }
+    
+    testimonialRefs.current.forEach(card => {
+      if (card) {
+        card.style.opacity = "0";
+        card.style.transform = "translateY(40px)";
+      }
+    });
+    
+    statRefs.current.forEach(stat => {
+      if (stat) {
+        stat.style.opacity = "0";
+        stat.style.transform = "translateY(30px)";
+      }
+    });
+    
+    // Setup intersection observer
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        console.log("Testimonials section in view, animating...");
+        
+        // Animate title
+        if (titleRef.current) {
+          titleRef.current.style.opacity = "1";
+          titleRef.current.style.transform = "translateY(0)";
+          titleRef.current.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+        }
+        
+        // Animate description
+        setTimeout(() => {
+          if (descriptionRef.current) {
+            descriptionRef.current.style.opacity = "1";
+            descriptionRef.current.style.transform = "translateY(0)";
+            descriptionRef.current.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+          }
+        }, 200);
+        
+        // Animate testimonials one by one
+        testimonialRefs.current.forEach((card, index) => {
+          setTimeout(() => {
+            if (card) {
+              card.style.opacity = "1";
+              card.style.transform = "translateY(0)";
+              card.style.transition = "opacity 0.7s ease, transform 0.7s ease";
+            }
+          }, 400 + (index * 200));
+        });
+        
+        // Animate stats one by one with counter animation
+        statRefs.current.forEach((stat, index) => {
+          setTimeout(() => {
+            if (stat) {
+              stat.style.opacity = "1";
+              stat.style.transform = "translateY(0)";
+              stat.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+              
+              // Animate counter
+              const counterElement = stat.querySelector('.counter');
+              if (counterElement) {
+                const targetValue = parseInt(counterElement.getAttribute('data-count') || '0', 10);
+                animateCounter(counterElement as HTMLElement, targetValue);
+              }
+            }
+          }, 1200 + (index * 150));
+        });
+        
+        // Disconnect observer once animation is triggered
+        observer.disconnect();
+      }
+    }, { threshold: 0.15 });
+    
+    // Start observing the section
+    const section = document.getElementById("testimonials");
+    if (section) {
+      observer.observe(section);
+    }
+    
+    return () => observer.disconnect();
+  }, []);
+  
   return (
     <section id="testimonials" className="bg-secondary text-white py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 process-step">Success <span className="text-accent">Stories</span></h2>
-          <p className="text-lg max-w-3xl mx-auto text-gray-300 process-step">
+          <h2 
+            ref={titleRef}
+            className="text-3xl md:text-4xl font-bold mb-4"
+          >
+            Success <span className="text-accent">Stories</span>
+          </h2>
+          <p 
+            ref={descriptionRef}
+            className="text-lg max-w-3xl mx-auto text-gray-300"
+          >
             Join the thousands of businesses who have transformed their lead generation with our program.
           </p>
         </div>
@@ -40,7 +164,10 @@ const TestimonialsSection = () => {
         <div className="flex flex-wrap -mx-4">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="w-full lg:w-1/3 px-4 mb-8">
-              <div className="bg-white text-secondary p-8 rounded-lg shadow-xl testimonial-card h-full process-step">
+              <div 
+                ref={el => testimonialRefs.current[index] = el}
+                className="bg-white text-secondary p-8 rounded-lg shadow-xl h-full hover:shadow-2xl transition-shadow duration-300"
+              >
                 <div className="flex items-center mb-6">
                   <img 
                     src={testimonial.image} 
@@ -70,7 +197,11 @@ const TestimonialsSection = () => {
         <div className="mt-12 text-center">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             {stats.map((stat, index) => (
-              <div key={index} className="process-step">
+              <div 
+                key={index} 
+                ref={el => statRefs.current[index] = el}
+                className="py-4"
+              >
                 <div className="text-4xl font-bold text-accent counter" data-count={stat.value}>0</div>
                 <p className="text-gray-300">{stat.label}</p>
               </div>
