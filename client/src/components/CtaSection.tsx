@@ -226,7 +226,7 @@ const CtaSection = () => {
                 Spring Special Pricing
               </h3>
               <div className="mb-6">
-                <p className="text-gray-200 mb-2">Initial payment:</p>
+                <p className="text-white mb-2">Initial payment:</p>
                 <p className="text-3xl font-bold">$3,000 <span className="text-sm font-normal">USD</span></p>
                 <p className="text-white text-sm font-semibold">Save $4,000 off the standard price</p>
               </div>

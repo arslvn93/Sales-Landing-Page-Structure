@@ -29,7 +29,7 @@ const Footer = () => {
                 <li>
                   <button 
                     onClick={() => scrollToSection("how-it-works")} 
-                    className="hover:text-white transition"
+                    className="text-white hover:text-[#1c65b8] transition"
                   >
                     How It Works
                   </button>
@@ -37,7 +37,7 @@ const Footer = () => {
                 <li>
                   <button 
                     onClick={() => scrollToSection("features")} 
-                    className="hover:text-white transition"
+                    className="text-white hover:text-[#1c65b8] transition"
                   >
                     Features
                   </button>
@@ -45,7 +45,7 @@ const Footer = () => {
                 <li>
                   <button 
                     onClick={() => scrollToSection("pricing")} 
-                    className="hover:text-white transition"
+                    className="text-white hover:text-[#1c65b8] transition"
                   >
                     Pricing
                   </button>
@@ -53,7 +53,7 @@ const Footer = () => {
                 <li>
                   <button 
                     onClick={() => scrollToSection("testimonials")} 
-                    className="hover:text-white transition"
+                    className="text-white hover:text-[#1c65b8] transition"
                   >
                     Testimonials
                   </button>
@@ -64,10 +64,10 @@ const Footer = () => {
             <div>
               <h4 className="font-bold mb-4">Company</h4>
               <ul className="space-y-2 text-white">
-                <li><a href="#" className="hover:text-white transition">About Us</a></li>
-                <li><a href="#" className="hover:text-white transition">Contact</a></li>
-                <li><a href="#" className="hover:text-white transition">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-white transition">Terms of Service</a></li>
+                <li><a href="#" className="text-white hover:text-[#1c65b8] transition">About Us</a></li>
+                <li><a href="#" className="text-white hover:text-[#1c65b8] transition">Contact</a></li>
+                <li><a href="#" className="text-white hover:text-[#1c65b8] transition">Privacy Policy</a></li>
+                <li><a href="#" className="text-white hover:text-[#1c65b8] transition">Terms of Service</a></li>
               </ul>
             </div>
           </div>
@@ -78,19 +78,19 @@ const Footer = () => {
             &copy; 2025 SalesGenius. All rights reserved.
           </p>
           <div className="flex space-x-4">
-            <a href="#" className="text-gray-300 hover:text-white transition">
+            <a href="#" className="text-white hover:text-[#1c65b8] transition">
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a href="#" className="text-gray-300 hover:text-white transition">
+            <a href="#" className="text-white hover:text-[#1c65b8] transition">
               <i className="fab fa-twitter"></i>
             </a>
-            <a href="#" className="text-gray-300 hover:text-white transition">
+            <a href="#" className="text-white hover:text-[#1c65b8] transition">
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="#" className="text-gray-300 hover:text-white transition">
+            <a href="#" className="text-white hover:text-[#1c65b8] transition">
               <i className="fab fa-linkedin-in"></i>
             </a>
-            <a href="#" className="text-gray-300 hover:text-white transition">
+            <a href="#" className="text-white hover:text-[#1c65b8] transition">
               <i className="fab fa-youtube"></i>
             </a>
           </div>
