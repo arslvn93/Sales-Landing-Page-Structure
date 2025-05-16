@@ -104,7 +104,7 @@ const SalesLetterSection = () => {
           ref={headlineRef}
           className="text-3xl md:text-5xl font-bold text-center mb-16 leading-tight text-secondary max-w-5xl mx-auto"
         >
-          "POSSIBLY THE BEST DEAL WE'VE EVER OFFERED FOR <span className="text-primary">REAL ESTATE AGENTS</span> WHO WANT TO FINISH 2025 STRONG"
+          "SPRING SPECIAL: THE <span className="text-primary">AMBITIOUS AGENT LEAD MACHINE</span> 6-MONTH FAST-TRACK SYSTEM"
         </h2>
         
         {/* Performance Metrics Box After Headline */}
@@ -184,18 +184,18 @@ const SalesLetterSection = () => {
           <p>That's exactly why we've created this special, limited-time opportunity that you won't see again this year.</p>
           
           <h3 className="text-2xl font-bold text-primary text-center mt-10 mb-4">
-            🚀 Introducing: The 6-Month Lead Machine
+            🚀 Introducing: The Ambitious Agent Lead Machine 6-Month Fast-Track System
           </h3>
           
-          <p className="text-center">A rare chance to get our proven lead generation system working for you for the next 6 months – specifically designed to help you crush your 2025 goals before the year ends.</p>
+          <p className="text-center">A complete "we do it all for you" lead generation system specifically designed for ambitious agents who want quality leads without the headache of managing campaigns themselves.</p>
           
           <div className="bg-secondary/5 p-6 rounded-xl border-2 border-yellow-300 mt-8 shadow-sm">
             <h4 className="font-bold text-xl mb-2 flex items-center">
-              <span className="text-2xl mr-2">💡</span> Here's the situation:
+              <span className="text-2xl mr-2">💡</span> WHY IT WORKS FOR REAL ESTATE AGENTS IN THEIR 20s & 30s:
             </h4>
-            <p>Our standard program is a comprehensive 12-month system that agents love. It works, it's reliable, and it's what has generated <mark className="bg-yellow-200 px-1">33.7 LEADS PER MONTH</mark> for our typical agent.</p>
-            <p className="mt-4">But we understand something important: with only 6 months left in 2025, you might be hesitant to commit to a full year right now.</p>
-            <p className="font-bold mt-4 bg-yellow-100 p-2 rounded">⚠️ You need results BEFORE December 31st. Not sometime next year.</p>
+            <p>This is NOT like other lead generation programs. Our system is specifically designed for the modern real estate market and for agents who understand social media and digital marketing.</p>
+            <p className="mt-4">We use cutting-edge targeting strategies to reach home buyers and sellers on the platforms they're already using - generating <mark className="bg-yellow-200 px-1">33.7 QUALIFIED LEADS PER MONTH</mark> for our typical agent.</p>
+            <p className="font-bold mt-4 bg-yellow-100 p-2 rounded">⚠️ But the best part? You don't have to understand ANY of the technical stuff. We handle EVERYTHING for you.</p>
           </div>
           
           <p>That's why, for a very limited time (and for just 6 agents), we're offering something we've never done before: our complete lead generation system for exactly the 6 months remaining in 2025.</p>
@@ -255,13 +255,17 @@ const SalesLetterSection = () => {
           </div>
           
           <h4 className="font-bold text-xl mt-12 flex items-center">
-            <span className="text-2xl mr-2">🤔</span> Why are we offering this special 6-month program right now?
+            <span className="text-2xl mr-2">🤔</span> WHY WE'RE OFFERING THIS SPRING SPECIAL
           </h4>
           
-          <p>Simple: The next 6 months are critical for hitting year-end goals. But they're also the months when most agents slow down their marketing, thinking "the year is almost over anyway."</p>
+          <p>Two reasons:</p>
           
           <div className="bg-yellow-100 p-4 rounded-xl my-6">
-            <p className="font-bold">That creates a MASSIVE opportunity for the agents who stay aggressive while everyone else pulls back.</p>
+            <p className="font-bold">1️⃣ We've found that while most real estate marketing agencies just churn out "leads," our clients succeed when we take a more hands-on approach. That's why our 6-month system focuses on both quantity AND quality.</p>
+          </div>
+          
+          <div className="bg-yellow-100 p-4 rounded-xl my-6">
+            <p className="font-bold">2️⃣ Spring and summer are the PERFECT time to establish your lead generation funnel so that you have a consistent flow of qualified buyers and sellers through the rest of 2025 and beyond.</p>
           </div>
           
           <p>Your competitors are going to ease off the gas. They'll wait until January to ramp up again.</p>

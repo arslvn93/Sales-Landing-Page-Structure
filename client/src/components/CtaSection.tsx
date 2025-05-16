@@ -223,16 +223,17 @@ const CtaSection = () => {
             >
               <h3 className="text-xl font-bold mb-4 flex items-center">
                 <span className="bg-accent text-secondary w-8 h-8 flex items-center justify-center rounded-full mr-3">2</span>
-                Enrollment Options
+                Spring Special Pricing
               </h3>
               <div className="mb-6">
-                <p className="text-gray-200 mb-2">One-time payment:</p>
-                <p className="text-3xl font-bold">$1,997 <span className="text-sm font-normal">USD</span></p>
-                <p className="text-accent text-sm">Save $594 vs. payment plan</p>
+                <p className="text-gray-200 mb-2">Initial payment:</p>
+                <p className="text-3xl font-bold">$3,000 <span className="text-sm font-normal">USD</span></p>
+                <p className="text-accent text-sm">Save $4,000 off the standard price</p>
               </div>
               <div>
-                <p className="text-gray-200 mb-2">Payment plan:</p>
-                <p className="text-xl">3 payments of $863 <span className="text-sm font-normal">USD</span></p>
+                <p className="text-gray-200 mb-2">Monthly payments:</p>
+                <p className="text-xl">$500/month <span className="text-sm font-normal">for 6 months</span></p>
+                <p className="text-accent text-sm mt-2">"Leads in 7 Days" Guarantee</p>
               </div>
             </div>
           </div>
@@ -243,13 +244,13 @@ const CtaSection = () => {
               href="#" 
               className="inline-block bg-accent hover:bg-accent/90 text-secondary font-bold py-4 px-10 rounded-lg text-xl transition shadow-lg mb-6"
             >
-              Secure Your Spot Now <i className="fas fa-arrow-right ml-2"></i>
+              SECURE YOUR SPOT - ONLY 6 AVAILABLE <i className="fas fa-arrow-right ml-2"></i>
             </a>
             <p 
               ref={securityNoteRef}
               className="flex justify-center items-center text-sm"
             >
-              <i className="fas fa-lock mr-2"></i> Secure payment • 30-day money-back guarantee • Limited spots
+              <i className="fas fa-lock mr-2"></i> Secure payment • "Leads in 7 Days" guarantee • Limited Spring Special
             </p>
           </div>
         </div>
@@ -267,24 +268,32 @@ const CtaSection = () => {
               ref={el => faqItemRefs.current[0] = el}
               className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-300"
             >
-              <h4 className="font-bold text-lg mb-3 text-secondary">How much time will I need to commit each week?</h4>
-              <p className="text-gray-600">Most successful clients commit 3-5 hours per week. The program is designed for busy business owners who may be managing multiple responsibilities and projects.</p>
+              <h4 className="font-bold text-lg mb-3 text-secondary">How is this different from other real estate marketing programs?</h4>
+              <p className="text-gray-600">Most programs give you training but expect YOU to implement everything yourself. We actually set up and manage your entire lead generation system FOR YOU, with guaranteed results in your first week.</p>
             </div>
             
             <div 
               ref={el => faqItemRefs.current[1] = el}
               className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-300"
             >
-              <h4 className="font-bold text-lg mb-3 text-secondary">Will this work for my industry?</h4>
-              <p className="text-gray-600">The program has been successful across dozens of industries including professional services, e-commerce, SaaS, coaching, consulting, and local businesses. We can tailor strategies to your specific market.</p>
+              <h4 className="font-bold text-lg mb-3 text-secondary">Do I need technical skills to make this work?</h4>
+              <p className="text-gray-600">Absolutely not! That's the whole point - our team handles all the technical aspects for you. We create the ads, set up the campaigns, build the automation, and manage everything. You focus on converting the leads we deliver.</p>
             </div>
             
             <div 
               ref={el => faqItemRefs.current[2] = el}
               className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-300"
             >
-              <h4 className="font-bold text-lg mb-3 text-secondary">How soon will I see results?</h4>
-              <p className="text-gray-600">Most clients begin seeing initial results within the first 30-60 days. By the 6-month mark, you'll have a fully functioning lead generation system delivering consistent qualified prospects.</p>
+              <h4 className="font-bold text-lg mb-3 text-secondary">What if I don't have a big advertising budget?</h4>
+              <p className="text-gray-600">Our system is designed to be highly efficient with your ad spend. Most clients start with just $500-$1000/month in ad spend and see excellent ROI. We focus on quality over quantity, ensuring you get motivated buyer and seller leads instead of tire-kickers.</p>
+            </div>
+            
+            <div 
+              ref={el => faqItemRefs.current[3] = el}
+              className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-300"
+            >
+              <h4 className="font-bold text-lg mb-3 text-secondary">How exactly does your "Leads in 7 Days" guarantee work?</h4>
+              <p className="text-gray-600">It's simple: if we don't deliver actual leads to your CRM within 7 days of launching your campaign, you get a full refund of your initial payment. We make this guarantee because our system has been proven time and again with agents just like you.</p>
             </div>
           </div>
         </div>
