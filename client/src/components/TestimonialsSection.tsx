@@ -159,10 +159,37 @@ const TestimonialsSection = () => {
           >
             Join the thousands of real estate agents who have transformed their lead generation with our program.
           </p>
-          <h3 className="text-xl font-semibold mt-8 mb-4">Last 30 Day Stats (April-May 2025)</h3>
+
         </div>
         
-        <div className="flex flex-wrap -mx-4">
+        {/* Top 3 Most Powerful Stats Above Testimonials */}
+        <div className="flex justify-center mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
+            <div className="text-center bg-white/10 p-4 rounded-lg">
+              <div className="text-4xl text-accent mb-2">🎯</div>
+              <div className="text-3xl font-bold text-white mb-1">33.7</div>
+              <p className="text-sm font-medium mb-1">LEADS PER MONTH</p>
+              <p className="text-xs text-gray-300">for the typical agent</p>
+            </div>
+            
+            <div className="text-center bg-white/10 p-4 rounded-lg">
+              <div className="text-4xl text-accent mb-2">💰</div>
+              <div className="text-3xl font-bold text-white mb-1">$6.20</div>
+              <p className="text-sm font-medium mb-1">COST PER LEAD</p>
+              <p className="text-xs text-gray-300">in efficient campaigns</p>
+            </div>
+            
+            <div className="text-center bg-white/10 p-4 rounded-lg">
+              <div className="text-4xl text-accent mb-2">📈</div>
+              <div className="text-3xl font-bold text-white mb-1">3.7%</div>
+              <p className="text-sm font-medium mb-1">CLICK RATE</p>
+              <p className="text-xs text-gray-300">4.1x industry average</p>
+            </div>
+          </div>
+        </div>
+        
+        {/* Testimonial Cards */}
+        <div className="flex flex-wrap -mx-4 mb-16">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="w-full lg:w-1/3 px-4 mb-8">
               <div 
@@ -195,7 +222,15 @@ const TestimonialsSection = () => {
           ))}
         </div>
         
-        <div className="mt-12 text-center">
+        {/* Last 30 Day Stats Header - After Testimonials */}
+        <div className="text-center mb-8">
+          <h3 className="text-xl font-semibold text-white border-b border-white/20 pb-3 mb-6 inline-block">
+            Last 30 Day Stats (April-May 2025)
+          </h3>
+        </div>
+        
+        {/* Stats Display - After Testimonials */}
+        <div className="text-center mb-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             {stats.map((stat, index) => (
               <div 
