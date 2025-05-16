@@ -24,52 +24,76 @@ const ComparisonSection = () => {
 
   const comparisonRows: ComparisonRow[] = [
     {
-      feature: "Structured Lead Generation Framework",
-      diy: false,
-      typical: { value: true, label: "Basic" },
-      leadMachine: { value: true, label: "Comprehensive" }
+      feature: "Implementation Approach",
+      diy: { value: "You Do Everything", isText: true },
+      typical: { value: "You Do Everything", isText: true },
+      leadMachine: { value: "100% Done For You", isText: true }
     },
     {
-      feature: "Live Expert Coaching",
-      diy: false,
-      typical: false,
-      leadMachine: { value: true, label: "Bi-Weekly" }
+      feature: "Ad Creation & Management",
+      diy: { value: "You Create & Manage", isText: true },
+      typical: { value: "Templates Only", isText: true },
+      leadMachine: { value: "Professional Team Handles Everything", isText: true }
     },
     {
-      feature: "Community Support",
-      diy: false,
-      typical: { value: true, label: "Basic Forum" },
-      leadMachine: { value: true, label: "Active Community" }
+      feature: "Time Investment Required",
+      diy: { value: "10+ hours/week", isText: true },
+      typical: { value: "5-7 hours/week", isText: true },
+      leadMachine: { value: "1-2 hours/week", isText: true }
     },
     {
-      feature: "Ready-to-Use Templates",
-      diy: false,
-      typical: { value: true, label: "Limited" },
-      leadMachine: { value: true, label: "Complete Kit" }
+      feature: "Speed to First Lead",
+      diy: { value: "4-8 weeks", isText: true },
+      typical: { value: "2-4 weeks", isText: true },
+      leadMachine: { value: "7 Days Guaranteed", isText: true }
     },
     {
-      feature: "1-on-1 Strategy Session",
-      diy: false,
-      typical: false,
-      leadMachine: { value: true, label: "Included" }
+      feature: "Real Estate Specialization",
+      diy: { value: "Not Built By Agents", isText: true },
+      typical: { value: "Not Built By Agents", isText: true },
+      leadMachine: { value: "Built By Top Performing Agents & Professional Media Buyers", isText: true }
     },
     {
-      feature: "Lead Quality Optimization",
-      diy: false,
-      typical: { value: true, label: "Basic" },
-      leadMachine: { value: true, label: "Advanced" }
+      feature: "Follow-Up System",
+      diy: { value: "Build Your Own", isText: true },
+      typical: { value: "Basic Templates", isText: true },
+      leadMachine: { value: "Complete System Installed For You", isText: true }
     },
     {
-      feature: "Success Rate",
-      diy: { value: "10%", isText: true },
-      typical: { value: "40%", isText: true },
-      leadMachine: { value: "94%", isText: true }
+      feature: "Conversion Training",
+      diy: { value: "None", isText: true },
+      typical: { value: "Generic Scripts", isText: true },
+      leadMachine: { value: "Weekly Coaching & Custom Seasonal Scripts", isText: true }
     },
     {
-      feature: "Time to Results",
-      diy: { value: "12-18 months", isText: true },
-      typical: { value: "6-12 months", isText: true },
-      leadMachine: { value: "3-6 months", isText: true }
+      feature: "Technical Support",
+      diy: { value: "None", isText: true },
+      typical: { value: "Email Only", isText: true },
+      leadMachine: { value: "Private Communication", isText: true }
+    },
+    {
+      feature: "Ongoing Optimization",
+      diy: { value: "DIY Only", isText: true },
+      typical: { value: "Monthly Group Call", isText: true },
+      leadMachine: { value: "Weekly Campaign Monitoring", isText: true }
+    },
+    {
+      feature: "Accountability System",
+      diy: { value: "None", isText: true },
+      typical: { value: "Occasional Group Check-ins", isText: true },
+      leadMachine: { value: "Weekly Live Accountability + Weekly Live Sales Training", isText: true }
+    },
+    {
+      feature: "Money-Back Guarantee",
+      diy: { value: "No Guarantee", isText: true },
+      typical: { value: "No Guarantee", isText: true },
+      leadMachine: { value: "7-Day Lead Guarantee", isText: true }
+    },
+    {
+      feature: "Learning Curve",
+      diy: { value: "Steep Learning Curve + No Conversion Training", isText: true },
+      typical: { value: "Steep Technical Learning Curve", isText: true },
+      leadMachine: { value: "No Tech Learning Curve, Just Learn To Convert", isText: true }
     }
   ];
 
@@ -210,13 +234,13 @@ const ComparisonSection = () => {
             ref={titleRef}
             className="text-3xl md:text-4xl font-bold mb-4 text-secondary"
           >
-            How We <span className="text-primary">Compare</span>
+            WHY <span className="text-primary">AMBITIOUS AGENTS</span> CHOOSE US
           </h2>
           <p 
             ref={descriptionRef}
             className="text-lg max-w-3xl mx-auto text-gray-600"
           >
-            See why our program delivers superior results compared to other lead generation options.
+            Compare our 6-Month Lead Machine to other options and see why we deliver superior results for real estate professionals.
           </p>
         </div>
         
