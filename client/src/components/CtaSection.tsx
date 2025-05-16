@@ -285,7 +285,7 @@ const CtaSection = () => {
               className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-300"
             >
               <h4 className="font-bold text-lg mb-3 text-secondary">What if I don't have a big advertising budget?</h4>
-              <p className="text-gray-600">Our system is designed to be highly efficient with your ad spend. Most clients start with just $500-$1000/month in ad spend and see excellent ROI. We focus on quality over quantity, ensuring you get motivated buyer and seller leads instead of tire-kickers.</p>
+              <p className="text-gray-600">Our system is designed to be highly efficient with your ads. Most clients spend a maximum of $500 per month to see a great ROI.</p>
             </div>
             
             <div 

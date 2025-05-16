@@ -3,8 +3,6 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import SalesLetterSection from "@/components/SalesLetterSection";
 import WhyOfferingSection from "@/components/WhyOfferingSection";
-import ProblemSection from "@/components/ProblemSection";
-import SolutionSection from "@/components/SolutionSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -65,12 +63,6 @@ const HomePage = () => {
       
       {/* Value Comparison Section */}
       <ComparisonSection />
-      
-      {/* Problem Section */}
-      <ProblemSection />
-      
-      {/* Solution Section */}
-      <SolutionSection />
       
       {/* Additional trust-building section */}
       <GuaranteeSection />
