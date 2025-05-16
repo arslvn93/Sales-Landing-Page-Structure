@@ -146,13 +146,13 @@ const HowItWorksSection = () => {
             ref={titleRef}
             className="text-3xl md:text-4xl font-bold mb-4 text-secondary"
           >
-            HERE'S EXACTLY HOW THE <span className="text-primary">6-MONTH LEAD MACHINE</span> WORKS
+            HERE'S EXACTLY HOW THE <span className="text-primary">6-MONTH AMBITIOUS AGENT LEAD MACHINE</span> WORKS
           </h2>
           <p 
             ref={descriptionRef}
             className="text-lg max-w-3xl mx-auto text-gray-600"
           >
-            Spring Special: Ambitious Agent Lead Machine 6-Month Fast-Track System
+            A Complete Done-For-You System That Delivers Qualified Leads While You Focus On Closing Deals
           </p>
         </div>
         

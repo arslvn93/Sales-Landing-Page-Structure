@@ -1,13 +1,58 @@
 import { useEffect, useRef } from "react";
 
 const FeaturesSection = () => {
-  const features = [
+  const mainFeatures = [
     {
       icon: "fas fa-cogs",
-      title: "DONE-FOR-YOU LEAD GENERATION SYSTEM",
-      description: "Professional Ad Creation & Copywriting, Complete Campaign Setup & Management, Comprehensive Lead Management, Custom Drip Campaign Creation, Full Automation Setup, Weekly Conversion Coaching, Accountability System, 6 Months of Campaign Management",
-      value: "$10,000"
+      title: "COMPLETE 6-MONTH LEAD GENERATION SYSTEM",
+      description: "Our experts handle everything from A to Z, ensuring you have a consistent flow of quality real estate leads for a full 6 months.",
+      value: "$10,000",
+      includes: [
+        "Professional Ad Creation & Copywriting",
+        "Complete Facebook & Instagram Campaign Setup",
+        "Google PPC Campaign Management",
+        "Custom Landing Page Creation",
+        "Comprehensive Lead Capture System",
+        "Automated Lead Nurturing Sequences",
+        "Weekly Lead Quality Monitoring",
+        "Monthly Strategy Optimization",
+        "Detailed Performance Analytics Dashboard",
+        "Full 6 Months of Done-For-You Management"
+      ]
     },
+    {
+      icon: "fas fa-comments",
+      title: "WEEKLY LEAD CONVERSION COACHING",
+      description: "Personal guidance to ensure you're turning those leads into appointments, clients, and closed deals.",
+      value: "$4,500",
+      includes: [
+        "Weekly Group Coaching Sessions",
+        "Live Q&A with Lead Conversion Experts",
+        "Personalized Lead Follow-Up Strategy",
+        "Accountability System & Progress Tracking",
+        "Closing Technique Masterclass",
+        "Monthly One-on-One Strategy Call",
+        "Exclusive Access to Coach Via Private Chat"
+      ]
+    },
+    {
+      icon: "fas fa-tools",
+      title: "COMPLETE LEAD CONVERSION TOOLKIT",
+      description: "Everything you need to efficiently work your leads from first contact to closing day.",
+      value: "$2,997",
+      includes: [
+        "Proven Lead Follow-Up Email Templates",
+        "Text Message Scripts Library",
+        "Call Scripts for Every Scenario",
+        "Pre-Showing & Post-Showing Checklists",
+        "Property Presentation Templates",
+        "Buyer Consultation Framework",
+        "Closing Day Preparation Guide"
+      ]
+    }
+  ];
+
+  const bonusFeatures = [
     {
       icon: "fas fa-comment-dots",
       title: "BONUS #1: THE COMPLETE OBJECTION CRUSHER LIBRARY",
@@ -25,7 +70,10 @@ const FeaturesSection = () => {
       title: "BONUS #3: PAST CLIENT REACTIVATION BLUEPRINT",
       description: "Extract hidden value from your existing database, generate immediate referrals from past clients, non-pushy outreach templates that maintain relationships.",
       value: "$997"
-    },
+    }
+  ];
+
+  const fastActionBonuses = [
     {
       icon: "fas fa-bolt",
       title: "FAST-ACTION BONUS: WEBSITE AUDIT",
@@ -180,28 +228,93 @@ const FeaturesSection = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
+        {/* Main Features Section */}
+        <h3 className="text-2xl font-bold text-center text-secondary mb-8">CORE OFFER COMPONENTS:</h3>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+          {mainFeatures.map((feature, index) => (
             <div 
               key={index} 
               ref={el => featureRefs.current[index] = el}
-              className="bg-neutral p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="bg-white border-2 border-primary p-8 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col h-full"
             >
-              <div className="text-primary text-3xl mb-4">
+              <div className="text-primary text-4xl mb-4 text-center">
                 <i className={feature.icon}></i>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-secondary">{feature.title}</h3>
-              <p className="text-gray-600 mb-4">{feature.description}</p>
-              <p className="text-accent font-bold">Value: {feature.value}</p>
+              <h3 className="text-xl font-bold mb-3 text-secondary text-center pb-2 border-b-2 border-gray-100">{feature.title}</h3>
+              <p className="text-gray-600 mb-4 text-center">{feature.description}</p>
+              
+              <div className="bg-gray-50 p-4 rounded-lg mb-4 flex-grow">
+                <h4 className="font-bold text-secondary mb-2">INCLUDES:</h4>
+                <ul className="space-y-1">
+                  {feature.includes.map((item, idx) => (
+                    <li key={idx} className="flex items-start">
+                      <i className="fas fa-check text-primary mt-1 mr-2"></i>
+                      <span className="text-sm">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              
+              <div className="text-center mt-auto">
+                <p className="text-accent font-bold text-2xl">{feature.value}</p>
+                <p className="text-xs text-gray-500">RETAIL VALUE</p>
+              </div>
             </div>
           ))}
+        </div>
+        
+        {/* Regular Bonuses Section */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-center text-secondary mb-8">
+            <span className="bg-yellow-200 px-4 py-1 rounded">INCLUDED BONUSES</span>
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {bonusFeatures.map((feature, index) => (
+              <div 
+                key={index} 
+                ref={el => featureRefs.current[index + mainFeatures.length] = el}
+                className="bg-neutral p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-2 border-yellow-300"
+              >
+                <div className="text-primary text-3xl mb-3 text-center">
+                  <i className={feature.icon}></i>
+                </div>
+                <h3 className="text-lg font-bold mb-3 text-secondary text-center">{feature.title}</h3>
+                <p className="text-gray-600 mb-4 text-sm">{feature.description}</p>
+                <p className="text-accent font-bold text-center text-xl">Value: {feature.value}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        {/* Fast Action Bonuses Section */}
+        <div className="bg-gray-50 p-8 rounded-xl mb-12">
+          <h3 className="text-2xl font-bold text-center text-secondary mb-8">
+            <span className="text-primary">⚡ FAST ACTION BONUSES ⚡</span>
+            <p className="text-sm text-gray-600 mt-2">Claim These When You Join Today</p>
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {fastActionBonuses.map((feature, index) => (
+              <div 
+                key={index} 
+                ref={el => featureRefs.current[index + mainFeatures.length + bonusFeatures.length] = el}
+                className="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200"
+              >
+                <div className="text-primary text-2xl mb-2">
+                  <i className={feature.icon}></i>
+                </div>
+                <h3 className="text-md font-bold mb-2 text-secondary">{feature.title}</h3>
+                <p className="text-gray-600 mb-3 text-xs">{feature.description}</p>
+                <p className="text-accent font-bold text-sm">Value: {feature.value}</p>
+              </div>
+            ))}
+          </div>
         </div>
         
         <div 
           ref={pricingBoxRef}
           className="mt-12 bg-primary rounded-xl p-8 text-white text-center max-w-3xl mx-auto shadow-xl"
         >
-          <h3 className="text-2xl font-bold mb-3">TOTAL VALUE: <span className="text-accent">$13,885</span></h3>
+          <h3 className="text-2xl font-bold mb-3">TOTAL VALUE: <span className="text-accent">$19,888</span></h3>
           <p className="text-xl mb-6">YOUR INVESTMENT: <span className="text-accent font-bold">$3,000 upfront + $500/month for 6 months</span></p>
           <p className="text-lg mb-6">(Save $4,000 off the regular price of $10,000)</p>
           <button 
