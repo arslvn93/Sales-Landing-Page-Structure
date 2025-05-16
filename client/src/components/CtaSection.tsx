@@ -193,7 +193,7 @@ const CtaSection = () => {
                 <span className="bg-accent text-secondary w-8 h-8 flex items-center justify-center rounded-full mr-3">1</span>
                 What You Get
               </h3>
-              <ul className="space-y-3 text-gray-200">
+              <ul className="space-y-3 text-white">
                 <li className="flex items-start">
                   <i className="fas fa-check-circle text-white mr-3 mt-1"></i>
                   <span>Complete Done-For-You Lead Generation System</span>
@@ -227,12 +227,12 @@ const CtaSection = () => {
               </h3>
               <div className="mb-6">
                 <p className="text-white mb-2">Initial payment:</p>
-                <p className="text-3xl font-bold">$3,000 <span className="text-sm font-normal">USD</span></p>
+                <p className="text-3xl font-bold text-white">$3,000 <span className="text-sm font-normal">USD</span></p>
                 <p className="text-white text-sm font-semibold">Save $4,000 off the standard price</p>
               </div>
               <div>
-                <p className="text-gray-200 mb-2">Monthly payments:</p>
-                <p className="text-xl">$500/month <span className="text-sm font-normal">for 6 months</span></p>
+                <p className="text-white mb-2">Monthly payments:</p>
+                <p className="text-xl text-white">$500/month <span className="text-sm font-normal">for 6 months</span></p>
                 <p className="text-white text-sm font-semibold mt-2">"Leads in 7 Days" Guarantee</p>
               </div>
             </div>
