@@ -36,10 +36,10 @@ const ComparisonSection = () => {
       leadMachine: { value: "Professional Team Handles Everything", isText: true }
     },
     {
-      feature: "Time Investment Required",
-      diy: { value: "10+ hours/week", isText: true },
-      typical: { value: "5-7 hours/week", isText: true },
-      leadMachine: { value: "1-2 hours/week", isText: true }
+      feature: "Your Time Investment Required",
+      diy: { value: "10+ hours/week to learn & manage", isText: true },
+      typical: { value: "5-7 hours/week to implement", isText: true },
+      leadMachine: { value: "1-2 hours/week (just sales calls)", isText: true }
     },
     {
       feature: "Speed to First Lead",
@@ -60,10 +60,16 @@ const ComparisonSection = () => {
       leadMachine: { value: "Complete System Installed For You", isText: true }
     },
     {
+      feature: "Live Trainings",
+      diy: { value: "None", isText: true },
+      typical: { value: "Monthly Group Call", isText: true },
+      leadMachine: { value: "Two Live Trainings Every Week", isText: true }
+    },
+    {
       feature: "Conversion Training",
       diy: { value: "None", isText: true },
       typical: { value: "Generic Scripts", isText: true },
-      leadMachine: { value: "Weekly Coaching & Custom Seasonal Scripts", isText: true }
+      leadMachine: { value: "Custom Scripts + Live Role Play", isText: true }
     },
     {
       feature: "Technical Support",
@@ -78,12 +84,6 @@ const ComparisonSection = () => {
       leadMachine: { value: "Weekly Campaign Monitoring", isText: true }
     },
     {
-      feature: "Accountability System",
-      diy: { value: "None", isText: true },
-      typical: { value: "Occasional Group Check-ins", isText: true },
-      leadMachine: { value: "Weekly Live Accountability + Weekly Live Sales Training", isText: true }
-    },
-    {
       feature: "Money-Back Guarantee",
       diy: { value: "No Guarantee", isText: true },
       typical: { value: "No Guarantee", isText: true },
@@ -94,6 +94,18 @@ const ComparisonSection = () => {
       diy: { value: "Steep Learning Curve + No Conversion Training", isText: true },
       typical: { value: "Steep Technical Learning Curve", isText: true },
       leadMachine: { value: "No Tech Learning Curve, Just Learn To Convert", isText: true }
+    },
+    {
+      feature: "Investment",
+      diy: { value: "$500-1500/month (ad spend only)", isText: true },
+      typical: { value: "$1,997 one-time + $500-1000/month (ads)", isText: true },
+      leadMachine: { value: "$3,000 upfront + $500/month for 6 months", isText: true }
+    },
+    {
+      feature: "Value",
+      diy: { value: "Unpredictable", isText: true },
+      typical: { value: "Mediocre", isText: true },
+      leadMachine: { value: "Exceptional ($19,888 Value)", isText: true }
     }
   ];
 
