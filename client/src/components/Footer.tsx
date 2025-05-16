@@ -17,7 +17,7 @@ const Footer = () => {
             <h3 className="text-2xl font-bold mb-4">
               <img src="/attached_assets/SG LOGO - White Text.png" alt="SalesGenius" className="h-8" />
             </h3>
-            <p className="max-w-xs text-gray-400">
+            <p className="max-w-xs text-gray-300">
               Transforming businesses with proven lead generation systems, expert guidance, and supportive community.
             </p>
           </div>
