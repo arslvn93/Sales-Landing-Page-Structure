@@ -132,7 +132,7 @@ const SalesLetterSection = () => {
               <div className="text-center">
                 <div className="text-4xl text-accent mb-2">📈</div>
                 <div className="text-3xl font-bold text-white mb-1">3.7% CLICK</div>
-                <p className="text-sm font-medium mb-1">RATE</p>
+                <p className="text-sm font-medium mb-1 text-white">RATE</p>
                 <p className="text-xs text-white">4.1x HIGHER than industry average of 0.9%</p>
               </div>
             </div>
@@ -141,21 +141,21 @@ const SalesLetterSection = () => {
               <div className="text-center">
                 <div className="text-4xl text-accent mb-2">🚀</div>
                 <div className="text-3xl font-bold text-white mb-1">76% OF AGENTS</div>
-                <p className="text-sm font-medium mb-1">see cost-per-lead</p>
+                <p className="text-sm font-medium mb-1 text-white">see cost-per-lead</p>
                 <p className="text-xs text-white">improvements within 90 days</p>
               </div>
               
               <div className="text-center">
                 <div className="text-4xl text-accent mb-2">👁️</div>
                 <div className="text-3xl font-bold text-white mb-1">20,000+</div>
-                <p className="text-sm font-medium mb-1">MONTHLY AD</p>
+                <p className="text-sm font-medium mb-1 text-white">MONTHLY AD</p>
                 <p className="text-xs text-white">VIEWS for the average agent</p>
               </div>
               
               <div className="text-center">
                 <div className="text-4xl text-accent mb-2">📊</div>
                 <div className="text-3xl font-bold text-white mb-1">$11.80 AVERAGE</div>
-                <p className="text-sm font-medium mb-1">COST PER LEAD</p>
+                <p className="text-sm font-medium mb-1 text-white">COST PER LEAD</p>
                 <p className="text-xs text-white">across all agents (55% below industry average)</p>
               </div>
             </div>
