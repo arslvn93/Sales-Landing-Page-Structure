@@ -167,14 +167,14 @@ const CtaSection = () => {
       <div className="container mx-auto px-6">
         <div 
           ref={mainBoxRef}
-          className="max-w-4xl mx-auto bg-gradient-to-br from-secondary to-secondary/90 text-white rounded-2xl p-12 shadow-2xl"
+          className="max-w-4xl mx-auto bg-gradient-to-br from-[#193d65] to-[#1c65b8] text-white rounded-2xl p-12 shadow-2xl"
         >
           <div className="text-center mb-8">
             <h2 
               ref={titleRef}
               className="text-3xl md:text-4xl font-bold mb-4"
             >
-              READY TO <span className="text-accent">TRANSFORM</span> YOUR REAL ESTATE BUSINESS?
+              READY TO <span className="text-white font-extrabold underline">TRANSFORM</span> YOUR REAL ESTATE BUSINESS?
             </h2>
             <p 
               ref={descriptionRef}

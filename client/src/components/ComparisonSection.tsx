@@ -237,7 +237,7 @@ const ComparisonSection = () => {
             ref={titleRef}
             className="text-3xl md:text-4xl font-bold mb-4 text-[#193d65]"
           >
-            WHY <span className="text-primary">AMBITIOUS AGENTS</span> CHOOSE US
+            WHY <span className="text-[#1c65b8]">AMBITIOUS AGENTS</span> CHOOSE US
           </h2>
           <p 
             ref={descriptionRef}
@@ -302,25 +302,25 @@ const ComparisonSection = () => {
                      row.feature === "Follow-Up System" ||
                      row.feature === "Learning Curve" ? (
                       <div className="flex flex-col">
-                        <span>{row.typical.value}</span>
-                        {(row.typical.value === "None" || row.typical.value.includes("Not Built")) && 
+                        <span>{getValue(row.typical)}</span>
+                        {(getValue(row.typical) === "None" || getValue(row.typical)?.includes("Not Built")) && 
                           <i className="fas fa-times text-red-500 text-xl mt-1"></i>
                         }
                       </div>
                     ) : (
-                      row.typical.value === "None" || row.typical.value === "No Guarantee" || row.typical.value === "Monthly Group Call" ? (
+                      getValue(row.typical) === "None" || getValue(row.typical) === "No Guarantee" || getValue(row.typical) === "Monthly Group Call" ? (
                         <div className="flex flex-col">
                           <i className="fas fa-times text-red-500 text-xl"></i>
-                          <span className="text-sm mt-1">{row.typical.value}</span>
+                          <span className="text-sm mt-1">{getValue(row.typical)}</span>
                         </div>
                       ) : (
-                        <span>{row.typical.value}</span>
+                        <span>{getValue(row.typical)}</span>
                       )
                     )}
                   </td>
-                  <td className="py-4 px-6 text-center bg-neutral font-bold">
+                  <td className="py-4 px-6 text-center bg-gray-100 font-bold">
                     <div className="flex flex-col">
-                      <span className="text-primary">{row.leadMachine.value}</span>
+                      <span className="text-[#1c65b8]">{row.leadMachine.value}</span>
                       <i className="fas fa-check text-green-500 text-2xl mt-1"></i>
                     </div>
                   </td>
