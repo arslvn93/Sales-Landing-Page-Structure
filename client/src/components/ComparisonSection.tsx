@@ -266,50 +266,60 @@ const ComparisonSection = () => {
                 >
                   <td className="py-4 px-6 font-medium">{row.feature}</td>
                   <td className="py-4 px-6 text-center">
-                    {typeof row.diy === 'boolean' ? (
-                      row.diy ? (
-                        <i className="fas fa-check text-yellow-500"></i>
-                      ) : (
-                        <i className="fas fa-times text-red-500"></i>
-                      )
+                    {row.feature === "Implementation Approach" || 
+                     row.feature === "Ad Creation & Management" || 
+                     row.feature === "Time Investment Required" || 
+                     row.feature === "Speed to First Lead" || 
+                     row.feature === "Real Estate Specialization" || 
+                     row.feature === "Follow-Up System" ||
+                     row.feature === "Learning Curve" ? (
+                      <div className="flex flex-col">
+                        <span>{row.diy.value}</span>
+                        {(row.diy.value === "None" || row.diy.value.includes("Not Built")) && 
+                          <i className="fas fa-times text-red-500 text-xl mt-1"></i>
+                        }
+                      </div>
                     ) : (
-                      'isText' in row.diy ? (
-                        row.diy.value
+                      row.diy.value === "None" || row.diy.value === "No Guarantee" || row.diy.value === "DIY Only" ? (
+                        <div className="flex flex-col">
+                          <i className="fas fa-times text-red-500 text-xl"></i>
+                          <span className="text-sm mt-1">{row.diy.value}</span>
+                        </div>
                       ) : (
-                        <>
-                          <i className="fas fa-check text-yellow-500"></i>
-                          {row.diy.label && <span className="ml-1">{row.diy.label}</span>}
-                        </>
+                        <span>{row.diy.value}</span>
                       )
                     )}
                   </td>
                   <td className="py-4 px-6 text-center">
-                    {typeof row.typical === 'boolean' ? (
-                      row.typical ? (
-                        <i className="fas fa-check text-yellow-500"></i>
-                      ) : (
-                        <i className="fas fa-times text-red-500"></i>
-                      )
+                    {row.feature === "Implementation Approach" || 
+                     row.feature === "Ad Creation & Management" || 
+                     row.feature === "Time Investment Required" || 
+                     row.feature === "Speed to First Lead" || 
+                     row.feature === "Real Estate Specialization" || 
+                     row.feature === "Follow-Up System" ||
+                     row.feature === "Learning Curve" ? (
+                      <div className="flex flex-col">
+                        <span>{row.typical.value}</span>
+                        {(row.typical.value === "None" || row.typical.value.includes("Not Built")) && 
+                          <i className="fas fa-times text-red-500 text-xl mt-1"></i>
+                        }
+                      </div>
                     ) : (
-                      'isText' in row.typical ? (
-                        row.typical.value
+                      row.typical.value === "None" || row.typical.value === "No Guarantee" || row.typical.value === "Monthly Group Call" ? (
+                        <div className="flex flex-col">
+                          <i className="fas fa-times text-red-500 text-xl"></i>
+                          <span className="text-sm mt-1">{row.typical.value}</span>
+                        </div>
                       ) : (
-                        <>
-                          <i className="fas fa-check text-yellow-500"></i>
-                          {row.typical.label && <span className="ml-1">{row.typical.label}</span>}
-                        </>
+                        <span>{row.typical.value}</span>
                       )
                     )}
                   </td>
                   <td className="py-4 px-6 text-center bg-neutral font-bold">
-                    {'isText' in row.leadMachine ? (
-                      row.leadMachine.value
-                    ) : (
-                      <>
-                        <i className="fas fa-check text-green-500"></i>
-                        <span className="ml-1">{row.leadMachine.label}</span>
-                      </>
-                    )}
+                    <div className="flex flex-col">
+                      <span className="text-primary">{row.leadMachine.value}</span>
+                      <i className="fas fa-check text-green-500 text-2xl mt-1"></i>
+                    </div>
                   </td>
                 </tr>
               ))}
@@ -325,7 +335,7 @@ const ComparisonSection = () => {
             onClick={() => scrollToSection("cta")} 
             className="inline-block bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-lg transition shadow-md"
           >
-            Join the 94% Success Rate
+            SECURE YOUR SPOT - ONLY 6 AVAILABLE
           </button>
         </div>
       </div>
