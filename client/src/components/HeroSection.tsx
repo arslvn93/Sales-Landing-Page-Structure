@@ -67,17 +67,18 @@ const HeroSection = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0">
+            <p className="text-accent font-bold mb-2">FOR SERIOUS AGENTS ONLY:</p>
             <h1 
               ref={titleRef} 
               className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
             >
-              Get <span className="text-accent">Qualified Real Estate Leads</span> in Just 7 Days
+              Test-Drive Our Done-For-You Buyer Lead System For 6 Months With Zero Long-Term Commitment... And See Your First Leads In <span className="text-accent">7 Days Or We Pay You Back</span>
             </h1>
             <p 
               ref={subtitleRef} 
               className="text-xl mb-8 text-gray-100"
             >
-              The Spring Special Fast-Track System for ambitious agents who want consistent buyer and seller leads without the hassle of managing their own marketing campaigns.
+              Need more buyer leads but hesitant to commit to a long-term coaching program? For the first time ever, we're offering our proven lead system as a 6-month trial. Works with your current CRM and guarantees buyer leads in 7 days - no 12-month contract required.
             </p>
             <div 
               ref={ctaRef} 
