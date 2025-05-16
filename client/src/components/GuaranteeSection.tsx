@@ -2,9 +2,9 @@ import { useEffect, useRef } from "react";
 
 const GuaranteeSection = () => {
   const guarantees = [
-    "Participate in at least 4 coaching calls",
-    "Complete the first 4 program modules",
-    "Show that you've implemented the core strategies"
+    "We guarantee actual leads in your CRM within 7 days or you get a complete refund",
+    "Not vague promises. Not \"coming soon\" excuses. ACTUAL LEADS in your system within your first week",
+    "If we don't deliver, you get every penny back - no questions asked"
   ];
 
   const iconRef = useRef<HTMLDivElement>(null);
@@ -146,13 +146,13 @@ const GuaranteeSection = () => {
               ref={titleRef}
               className="text-3xl md:text-4xl font-bold mb-6 text-secondary"
             >
-              Our 30-Day Money-Back <span className="text-primary">Guarantee</span>
+              OUR <span className="text-primary">"LEADS IN 7 DAYS"</span> GUARANTEE
             </h2>
             <p 
               ref={descriptionRef}
               className="text-lg mb-6 text-gray-600"
             >
-              We're confident our program will deliver exceptional value. If you implement our strategies and don't see results, we'll refund 100% of your investment.
+              We're so confident in our system that we offer a guarantee no other marketing company would dare make.
             </p>
             <ul className="space-y-4 mb-8">
               {guarantees.map((guarantee, index) => (

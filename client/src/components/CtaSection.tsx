@@ -174,13 +174,13 @@ const CtaSection = () => {
               ref={titleRef}
               className="text-3xl md:text-4xl font-bold mb-4"
             >
-              Ready to <span className="text-accent">Transform</span> Your Lead Generation?
+              READY TO <span className="text-accent">TRANSFORM</span> YOUR REAL ESTATE BUSINESS?
             </h2>
             <p 
               ref={descriptionRef}
               className="text-xl mb-8"
             >
-              Join our next cohort and get access to everything you need to build your reliable lead generation machine in 6 months or less.
+              Spring Special: Ambitious Agent Lead Machine 6-Month Fast-Track System
             </p>
           </div>
           
@@ -191,28 +191,28 @@ const CtaSection = () => {
             >
               <h3 className="text-xl font-bold mb-4 flex items-center">
                 <span className="bg-accent text-secondary w-8 h-8 flex items-center justify-center rounded-full mr-3">1</span>
-                Program Overview
+                What You Get
               </h3>
               <ul className="space-y-3 text-gray-200">
                 <li className="flex items-start">
                   <i className="fas fa-check-circle text-accent mr-3 mt-1"></i>
-                  <span>12 comprehensive video modules</span>
+                  <span>Complete Done-For-You Lead Generation System</span>
                 </li>
                 <li className="flex items-start">
                   <i className="fas fa-check-circle text-accent mr-3 mt-1"></i>
-                  <span>Bi-weekly group coaching calls for 6 months</span>
+                  <span>Professional Ad Creation & Copywriting</span>
                 </li>
                 <li className="flex items-start">
                   <i className="fas fa-check-circle text-accent mr-3 mt-1"></i>
-                  <span>Complete lead generation toolkit</span>
+                  <span>Custom Drip Campaign Creation</span>
                 </li>
                 <li className="flex items-start">
                   <i className="fas fa-check-circle text-accent mr-3 mt-1"></i>
-                  <span>Private business community</span>
+                  <span>Weekly Conversion Coaching</span>
                 </li>
                 <li className="flex items-start">
                   <i className="fas fa-check-circle text-accent mr-3 mt-1"></i>
-                  <span>1-on-1 strategy session</span>
+                  <span>6 Months of Campaign Management</span>
                 </li>
               </ul>
             </div>

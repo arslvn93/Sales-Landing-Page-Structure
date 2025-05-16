@@ -3,40 +3,46 @@ import { useEffect, useRef } from "react";
 const FeaturesSection = () => {
   const features = [
     {
-      icon: "fas fa-video",
-      title: "12 Video Modules",
-      description: "Step-by-step training covering every aspect of building your lead generation system, from strategy to implementation.",
-      value: "$2,997"
+      icon: "fas fa-cogs",
+      title: "DONE-FOR-YOU LEAD GENERATION SYSTEM",
+      description: "Professional Ad Creation & Copywriting, Complete Campaign Setup & Management, Comprehensive Lead Management, Custom Drip Campaign Creation, Full Automation Setup, Weekly Conversion Coaching, Accountability System, 6 Months of Campaign Management",
+      value: "$10,000"
     },
     {
-      icon: "fas fa-users",
-      title: "Bi-Weekly Group Coaching",
-      description: "Live Q&A sessions with lead generation experts who provide personalized guidance and feedback on your campaigns.",
-      value: "$4,500"
-    },
-    {
-      icon: "fas fa-file-alt",
-      title: "Lead Generation Toolkit",
-      description: "Templates, scripts, and swipe files for every stage of your lead generation process, saving you hundreds of hours.",
-      value: "$1,997"
-    },
-    {
-      icon: "fas fa-comments",
-      title: "Private Community",
-      description: "Connect with fellow business owners, share insights, find partners, and get accountability for your lead generation efforts.",
+      icon: "fas fa-comment-dots",
+      title: "BONUS #1: THE COMPLETE OBJECTION CRUSHER LIBRARY",
+      description: "Word-for-word scripts for handling every buyer objection, proven frameworks for turning hesitant prospects into eager clients, weekly \"Objection Spotlight\" addressing current market challenges.",
       value: "$997"
     },
     {
-      icon: "fas fa-headset",
-      title: "1-on-1 Strategy Call",
-      description: "A private 60-minute session with a lead generation specialist to create your personalized lead generation roadmap.",
-      value: "$500"
+      icon: "fas fa-home",
+      title: "BONUS #2: OPEN HOUSE PROFIT SYSTEM",
+      description: "Maximize attendance at every open house, convert casual browsers into serious buyers, follow-up sequence that turns attendees into appointments.",
+      value: "$497"
     },
     {
-      icon: "fas fa-tools",
-      title: "Tech & Tools Guide",
-      description: "Recommendations for the essential software and tools you need for effective lead generation, with exclusive discounts.",
+      icon: "fas fa-users",
+      title: "BONUS #3: PAST CLIENT REACTIVATION BLUEPRINT",
+      description: "Extract hidden value from your existing database, generate immediate referrals from past clients, non-pushy outreach templates that maintain relationships.",
+      value: "$997"
+    },
+    {
+      icon: "fas fa-bolt",
+      title: "FAST-ACTION BONUS: WEBSITE AUDIT",
+      description: "Comprehensive Website Audit to identify and fix conversion bottlenecks and improve user experience.",
       value: "$497"
+    },
+    {
+      icon: "fas fa-ad",
+      title: "FAST-ACTION BONUS: LISTING AD TEMPLATES",
+      description: "2 Custom Listing Ad Templates designed to showcase your properties and attract qualified buyers.",
+      value: "$397"
+    },
+    {
+      icon: "fas fa-user-friends",
+      title: "FAST-ACTION BONUS: PRIVATE ONBOARDING",
+      description: "One-on-one onboarding session to ensure your campaigns are perfectly tailored to your specific market and goals.",
+      value: "$500"
     }
   ];
 
@@ -164,13 +170,13 @@ const FeaturesSection = () => {
             ref={titleRef}
             className="text-3xl md:text-4xl font-bold mb-4 text-secondary"
           >
-            What You'll <span className="text-primary">Get</span>
+            HERE'S EVERYTHING YOU GET WITH THE <span className="text-primary">6-MONTH LEAD MACHINE</span>
           </h2>
           <p 
             ref={descriptionRef}
             className="text-lg max-w-3xl mx-auto text-gray-600"
           >
-            Everything you need to transform your business into a lead generation powerhouse in 6 months or less.
+            Spring Special: Ambitious Agent Lead Machine 6-Month Fast-Track System
           </p>
         </div>
         
@@ -195,13 +201,14 @@ const FeaturesSection = () => {
           ref={pricingBoxRef}
           className="mt-12 bg-primary rounded-xl p-8 text-white text-center max-w-3xl mx-auto shadow-xl"
         >
-          <h3 className="text-2xl font-bold mb-3">Total Value: <span className="text-accent">$11,488</span></h3>
-          <p className="text-xl mb-6">Today's Price: <span className="text-accent font-bold">Just $1,997</span></p>
+          <h3 className="text-2xl font-bold mb-3">TOTAL VALUE: <span className="text-accent">$13,885</span></h3>
+          <p className="text-xl mb-6">YOUR INVESTMENT: <span className="text-accent font-bold">$3,000 upfront + $500/month for 6 months</span></p>
+          <p className="text-lg mb-6">(Save $4,000 off the regular price of $10,000)</p>
           <button 
             onClick={() => scrollToSection("cta")} 
             className="inline-block bg-white text-primary hover:bg-gray-100 font-bold py-4 px-8 rounded-lg transition shadow-md"
           >
-            Secure Your Spot Now
+            SECURE YOUR SPOT - ONLY 6 AVAILABLE
           </button>
         </div>
       </div>
