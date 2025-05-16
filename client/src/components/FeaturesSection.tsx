@@ -6,7 +6,6 @@ const FeaturesSection = () => {
       icon: "fas fa-cogs",
       title: "COMPLETE 6-MONTH LEAD GENERATION SYSTEM",
       description: "Our experts handle everything from A to Z, ensuring you have a consistent flow of quality real estate leads for a full 6 months.",
-      value: "$10,000",
       includes: [
         "Professional Ad Creation & Copywriting",
         "Complete Facebook & Instagram Campaign Setup",
@@ -24,7 +23,6 @@ const FeaturesSection = () => {
       icon: "fas fa-comments",
       title: "WEEKLY LEAD CONVERSION COACHING",
       description: "Personal guidance to ensure you're turning those leads into appointments, clients, and closed deals.",
-      value: "$4,500",
       includes: [
         "Weekly Group Coaching Sessions",
         "Live Q&A with Lead Conversion Experts",
@@ -39,7 +37,6 @@ const FeaturesSection = () => {
       icon: "fas fa-tools",
       title: "COMPLETE LEAD CONVERSION TOOLKIT",
       description: "Everything you need to efficiently work your leads from first contact to closing day.",
-      value: "$2,997",
       includes: [
         "Proven Lead Follow-Up Email Templates",
         "Text Message Scripts Library",
@@ -255,10 +252,7 @@ const FeaturesSection = () => {
                 </ul>
               </div>
               
-              <div className="text-center mt-auto">
-                <p className="text-accent font-bold text-2xl">{feature.value}</p>
-                <p className="text-xs text-gray-500">RETAIL VALUE</p>
-              </div>
+
             </div>
           ))}
         </div>

@@ -203,7 +203,7 @@ const ScarcitySection = () => {
             ref={descriptionRef}
             className="text-lg max-w-3xl mx-auto text-gray-300"
           >
-            To ensure personalized attention and maintain our 94% success rate, we only accept a limited number of businesses per cohort.
+            To ensure personalized attention and maintain the highest level of service, we only accept a limited number of agents for each cohort.
           </p>
         </div>
         
@@ -246,8 +246,8 @@ const ScarcitySection = () => {
             ref={spotsBoxRef}
             className="bg-secondary/70 rounded-lg p-6 text-center"
           >
-            <h4 className="text-xl font-bold mb-2">Only <span className="text-accent">7 Spots</span> Remaining!</h4>
-            <p className="mb-4">Our previous cohort sold out in less than 48 hours.</p>
+            <h4 className="text-xl font-bold mb-2">Only <span className="text-accent">6 Spots</span> Remaining!</h4>
+            <p className="mb-4">For the June 1st cohort - don't miss out!</p>
             <div className="w-full bg-gray-700 rounded-full h-4 mb-4 overflow-hidden">
               <div 
                 ref={progressBarRef}
