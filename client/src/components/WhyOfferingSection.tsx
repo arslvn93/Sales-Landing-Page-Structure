@@ -85,9 +85,9 @@ const WhyOfferingSection = () => {
     <section ref={sectionRef} className="bg-white py-20">
       <div className="container mx-auto px-6">
         {/* Social Proof Banner at top */}
-        <div className="bg-accent/10 py-4 px-6 rounded-lg mb-12 text-center">
-          <p className="text-xl font-bold text-secondary">
-            <span className="text-primary">PROVEN RESULTS:</span> 1893 Buyer Leads Generated For Agents Just Like You In The Last 30 Days
+        <div className="bg-gray-100 py-4 px-6 rounded-lg mb-12 text-center">
+          <p className="text-xl font-bold text-[#333333]">
+            <span className="text-[#1c65b8]">PROVEN RESULTS:</span> 1893 Buyer Leads Generated For Agents Just Like You In The Last 30 Days
           </p>
         </div>
         
@@ -95,9 +95,9 @@ const WhyOfferingSection = () => {
           <div className="md:w-1/2">
             <h2
               ref={titleRef}
-              className="text-3xl md:text-4xl font-bold mb-6 text-secondary"
+              className="text-3xl md:text-4xl font-bold mb-6 text-[#333333]"
             >
-              Why We're <span className="text-primary">Offering This</span>
+              Why We're <span className="text-[#1c65b8]">Offering This</span>
             </h2>
             
             <div ref={contentRef}>
@@ -152,7 +152,7 @@ const WhyOfferingSection = () => {
           {/* Results Statistics Box */}
           <div 
             ref={statsBoxRef}
-            className="md:w-1/2 bg-secondary text-white rounded-xl p-8 shadow-xl"
+            className="md:w-1/2 bg-[#1c1c1c] text-white rounded-xl p-8 shadow-xl"
           >
             <h3 className="text-2xl font-bold mb-6 border-b border-white/20 pb-4">
               REAL PERFORMANCE METRICS FROM CURRENT AGENT CAMPAIGNS:

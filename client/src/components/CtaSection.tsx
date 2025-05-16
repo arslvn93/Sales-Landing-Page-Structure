@@ -167,7 +167,7 @@ const CtaSection = () => {
       <div className="container mx-auto px-6">
         <div 
           ref={mainBoxRef}
-          className="max-w-4xl mx-auto bg-gradient-to-br from-[#193d65] to-[#1c65b8] text-white rounded-2xl p-12 shadow-2xl"
+          className="max-w-4xl mx-auto bg-gradient-to-br from-[#1c1c1c] to-[#333333] text-white rounded-2xl p-12 shadow-2xl"
         >
           <div className="text-center mb-8">
             <h2 
