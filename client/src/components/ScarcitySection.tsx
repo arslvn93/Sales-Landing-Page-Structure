@@ -190,7 +190,7 @@ const ScarcitySection = () => {
   };
   
   return (
-    <section className="scarcity-section bg-[#193d65] text-white py-20">
+    <section className="scarcity-section bg-[#1c1c1c] text-white py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 
@@ -244,7 +244,7 @@ const ScarcitySection = () => {
           
           <div 
             ref={spotsBoxRef}
-            className="bg-[#193d65]/70 rounded-lg p-6 text-center"
+            className="bg-[#333333]/70 rounded-lg p-6 text-center"
           >
             <h4 className="text-xl font-bold mb-2">Only <span className="text-white font-extrabold underline">6 Spots</span> Remaining!</h4>
             <p className="mb-4">For the June 1st cohort - don't miss out!</p>

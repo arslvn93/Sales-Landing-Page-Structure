@@ -63,7 +63,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="hero" className="bg-gradient-to-br from-[#193d65] to-[#1c65b8] text-white py-20">
+    <section id="hero" className="bg-gradient-to-br from-[#1c1c1c] to-[#333333] text-white py-20">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0">
