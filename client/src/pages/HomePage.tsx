@@ -71,9 +71,11 @@ const HomePage = () => {
       {/* Guarantee Section with new animations */}
       <GuaranteeSection />
       
+      {/* Scarcity Section with new animations */}
+      <ScarcitySection />
+      
       {/* Components still commented out for now */}
       {/*
-      <ScarcitySection />
       <CtaSection />
       <Footer />
       <StickyMobileCta />
