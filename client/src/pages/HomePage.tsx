@@ -74,12 +74,14 @@ const HomePage = () => {
       {/* Scarcity Section with new animations */}
       <ScarcitySection />
       
-      {/* Components still commented out for now */}
-      {/*
+      {/* CTA Section with new animations */}
       <CtaSection />
+      
+      {/* Footer */}
       <Footer />
+      
+      {/* Mobile sticky CTA */}
       <StickyMobileCta />
-      */}
     </div>
   );
 };
