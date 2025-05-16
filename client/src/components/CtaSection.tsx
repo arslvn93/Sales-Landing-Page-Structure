@@ -248,7 +248,7 @@ const CtaSection = () => {
             </a>
             <p 
               ref={securityNoteRef}
-              className="flex justify-center items-center text-sm"
+              className="flex justify-center items-center text-sm text-gray-100"
             >
               <i className="fas fa-lock mr-2"></i> Secure payment • "Leads in 7 Days" guarantee • Limited Spring Special
             </p>
