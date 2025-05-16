@@ -25,93 +25,81 @@ const ComparisonSection = () => {
   const comparisonRows: ComparisonRow[] = [
     {
       feature: "The Real Cost",
-      diy: { value: "$997-1,997 upfront for courses + $500-1,500/month ad spend + $500/month admin costs", isText: true },
-      typical: { value: "$3,000-10,000 upfront + $1,000-2,000/month (ads + admin)", isText: true },
-      leadMachine: { value: "$3,000 upfront + $500/month service + ad spend", isText: true }
+      diy: { value: "$997-1,997 upfront + ad spend", isText: true },
+      typical: { value: "$3,000-10,000 upfront + ad spend", isText: true },
+      leadMachine: { value: "$3,000 initiation/onboarding + $497/mo management & training fee + ad spend", isText: true }
     },
     {
       feature: "Time to First Results",
-      diy: { value: "4-8 months (if ever)", isText: true },
-      typical: { value: "2-4 months", isText: true },
+      diy: { value: "4-8 weeks", isText: true },
+      typical: { value: "2-4 weeks", isText: true },
       leadMachine: { value: "7 DAYS GUARANTEED", isText: true }
     },
     {
       feature: "Your Time Commitment",
-      diy: { value: "15-20 hours/week building & managing everything yourself", isText: true },
-      typical: { value: "8-10 hours/week implementing what you learn", isText: true },
-      leadMachine: { value: "1-2 hours/week (just sales calls)", isText: true }
+      diy: { value: "15-20 hours/week", isText: true },
+      typical: { value: "8-10 hours/week", isText: true },
+      leadMachine: { value: "1-2 hours/week", isText: true }
     },
     {
       feature: "Campaign Creation",
       diy: { value: "You spend weeks learning ads, writing copy, designing creatives", isText: true },
-      typical: { value: "Basic templates you must customize yourself", isText: true },
-      leadMachine: { value: "Custom campaigns built FOR YOU by experts", isText: true }
+      typical: { value: "Lead gen only, no nurture", isText: true },
+      leadMachine: { value: "Proven tested campaigns with automation", isText: true }
     },
     {
       feature: "Implementation",
-      diy: { value: "100% Do-It-Yourself (steep learning curve)", isText: true },
-      typical: { value: "You implement everything (technical nightmare)", isText: true },
-      leadMachine: { value: "100% DONE FOR YOU", isText: true }
+      diy: { value: "100% Do-It-Yourself", isText: true },
+      typical: { value: "You implement everything", isText: true },
+      leadMachine: { value: "All ad setup completely done for you", isText: true }
     },
     {
       feature: "Campaign Management",
-      diy: { value: "You handle everything (ad fatigue, audience burnout, pixel issues)", isText: true },
-      typical: { value: "Basic optimization advice only", isText: true },
-      leadMachine: { value: "Professional team handles daily monitoring & optimization", isText: true }
+      diy: { value: "You handle everything", isText: true },
+      typical: { value: "Basic optimization only", isText: true },
+      leadMachine: { value: "Professional team handles daily monitoring", isText: true }
     },
     {
       feature: "Industry Expertise",
-      diy: { value: "Generic marketing advice not specific to real estate", isText: true },
-      typical: { value: "One-size-fits-all approach", isText: true },
-      leadMachine: { value: "Built by top-performing agents & professional media buyers", isText: true }
+      diy: { value: "Generic marketing advice", isText: true },
+      typical: { value: "Not built by real estate agents", isText: true },
+      leadMachine: { value: "Built by top-performing agents & media buyers", isText: true }
     },
     {
       feature: "Follow-Up System",
-      diy: { value: "Build your own from scratch", isText: true },
-      typical: { value: "Basic templates with no integration", isText: true },
-      leadMachine: { value: "Complete system installed & customized for your business", isText: true }
-    },
-    {
-      feature: "Lead Nurturing",
-      diy: { value: "Manual follow-up (if you remember)", isText: true },
-      typical: { value: "Basic email templates only", isText: true },
-      leadMachine: { value: "Automated sequences that convert leads while you sleep", isText: true }
+      diy: { value: "Build from scratch", isText: true },
+      typical: { value: "Basic templates (technical nightmare)", isText: true },
+      leadMachine: { value: "Done for you", isText: true }
     },
     {
       feature: "Live Training",
-      diy: { value: "None or recorded videos only", isText: true },
-      typical: { value: "Monthly group call with dozens of others", isText: true },
-      leadMachine: { value: "TWO LIVE TRAININGS EVERY WEEK", isText: true }
+      diy: { value: "None or recorded videos", isText: true },
+      typical: { value: "Monthly group call", isText: true },
+      leadMachine: { value: "Two live trainings every week", isText: true }
     },
     {
       feature: "Sales Conversion",
-      diy: { value: "No training on how to convert leads", isText: true },
-      typical: { value: "Generic scripts that don't work in today's market", isText: true },
-      leadMachine: { value: "Custom scripts + live role play + weekly coaching", isText: true }
+      diy: { value: "No training", isText: true },
+      typical: { value: "Generic scripts", isText: true },
+      leadMachine: { value: "Custom scripts + live role play", isText: true }
     },
     {
-      feature: "Support When Issues Arise",
-      diy: { value: "None (you're on your own)", isText: true },
-      typical: { value: "Generic email support with 48+ hour response time", isText: true },
-      leadMachine: { value: "Private communication with rapid response", isText: true }
+      feature: "Support",
+      diy: { value: "None", isText: true },
+      typical: { value: "Email support", isText: true },
+      leadMachine: { value: "Private communication", isText: true }
     },
     {
       feature: "Risk Level",
-      diy: { value: "High (most agents fail and waste thousands)", isText: true },
-      typical: { value: "Medium (results vary greatly)", isText: true },
-      leadMachine: { value: "LOW (7-day lead guarantee)", isText: true }
+      diy: { value: "High", isText: true },
+      typical: { value: "Medium", isText: true },
+      leadMachine: { value: "Low (7-day lead guarantee)", isText: true }
     },
     {
-      feature: "Time to ROI",
-      diy: { value: "6-12 months (if ever)", isText: true },
-      typical: { value: "3-6 months", isText: true },
-      leadMachine: { value: "As fast as 30 days", isText: true }
-    },
-    {
-      feature: "Total Value",
-      diy: { value: "Unpredictable (most never see ROI)", isText: true },
-      typical: { value: "Mediocre results with high effort", isText: true },
-      leadMachine: { value: "EXCEPTIONAL ($19,888 VALUE)", isText: true }
+      feature: "Value",
+      diy: { value: "Unpredictable", isText: true },
+      typical: { value: "Mediocre", isText: true },
+      leadMachine: { value: "Exceptional ($19,888 Value)", isText: true }
     }
   ];
 
