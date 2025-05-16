@@ -109,7 +109,7 @@ const SalesLetterSection = () => {
         
         {/* Performance Metrics Box After Headline */}
         <div className="flex justify-center mb-16">
-          <div className="bg-secondary text-white p-8 rounded-xl max-w-4xl mx-auto shadow-xl">
+          <div className="bg-[#1c1c1c] text-white p-8 rounded-xl max-w-4xl mx-auto shadow-xl">
             <h3 className="text-xl font-bold mb-6 border-b border-white/20 pb-4 text-center">
               REAL PERFORMANCE METRICS FROM CURRENT AGENT CAMPAIGNS:
             </h3>
@@ -119,7 +119,7 @@ const SalesLetterSection = () => {
                 <div className="text-4xl text-accent mb-2">🎯</div>
                 <div className="text-3xl font-bold text-white mb-1">33.7 LEADS</div>
                 <p className="text-sm font-medium mb-1">PER MONTH</p>
-                <p className="text-xs">for the typical agent in our program</p>
+                <p className="text-xs text-gray-200">for the typical agent in our program</p>
               </div>
               
               <div className="text-center">

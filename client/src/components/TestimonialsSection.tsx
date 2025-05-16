@@ -144,18 +144,18 @@ const TestimonialsSection = () => {
   }, []);
   
   return (
-    <section id="testimonials" className="bg-secondary text-white py-20">
+    <section id="testimonials" className="bg-[#1c1c1c] text-white py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 
             ref={titleRef}
             className="text-3xl md:text-4xl font-bold mb-4"
           >
-            Success <span className="text-accent">Stories</span>
+            Success <span className="text-[#1c65b8] font-bold">Stories</span>
           </h2>
           <p 
             ref={descriptionRef}
-            className="text-lg max-w-3xl mx-auto text-gray-300"
+            className="text-lg max-w-3xl mx-auto text-gray-100"
           >
             Join the thousands of real estate agents who have transformed their lead generation with our program.
           </p>
