@@ -24,12 +24,6 @@ const ComparisonSection = () => {
 
   const comparisonRows: ComparisonRow[] = [
     {
-      feature: "The Real Cost",
-      diy: { value: "$997-1,997 upfront + ad spend", isText: true },
-      typical: { value: "$3,000-10,000 upfront + ad spend", isText: true },
-      leadMachine: { value: "$3,000 initiation/onboarding + $497/mo management & training fee + ad spend", isText: true }
-    },
-    {
       feature: "Time to First Results",
       diy: { value: "4-8 weeks", isText: true },
       typical: { value: "2-4 weeks", isText: true },
@@ -94,12 +88,6 @@ const ComparisonSection = () => {
       diy: { value: "High", isText: true },
       typical: { value: "Medium", isText: true },
       leadMachine: { value: "Low (7-day lead guarantee)", isText: true }
-    },
-    {
-      feature: "Value",
-      diy: { value: "Unpredictable", isText: true },
-      typical: { value: "Mediocre", isText: true },
-      leadMachine: { value: "Exceptional ($19,888 Value)", isText: true }
     }
   ];
 
