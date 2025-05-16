@@ -67,18 +67,18 @@ const HeroSection = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0">
-            <p className="text-white font-bold mb-2">FOR SERIOUS AGENTS ONLY:</p>
+            <p className="text-white font-bold mb-2 bg-[#1c65b8] inline-block px-3 py-1 rounded-sm text-sm">FOR SERIOUS AGENTS ONLY:</p>
             <h1 
               ref={titleRef} 
-              className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-white"
+              className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight text-white tracking-tight"
             >
-              Test-Drive Our Done-For-You Buyer Lead System For 6 Months With Zero Long-Term Commitment... And See Your First Leads In <span className="text-white font-bold underline">7 Days Or We Pay You Back</span>
+              Test-Drive Our <span className="text-[#1c65b8] font-extrabold">Done-For-You Buyer Lead System</span> For 6 Months With <span className="italic">Zero Long-Term Commitment</span>... <br className="hidden md:block"/>And See Your First Leads In <span className="bg-[#1c65b8] px-2 py-1 rounded text-white font-extrabold">7 Days Or We Pay You Back</span>
             </h1>
             <p 
               ref={subtitleRef} 
-              className="text-xl mb-8 text-white"
+              className="text-lg mb-8 text-white leading-relaxed"
             >
-              Need more buyer leads but hesitant to commit to a long-term coaching program? For the first time ever, we're offering our proven lead system as a 6-month trial. Works with your current CRM and guarantees buyer leads in 7 days - no 12-month contract required.
+              Need more buyer leads but <span className="italic">hesitant to commit</span> to a long-term coaching program? <span className="bg-white/10 px-1 py-0.5 rounded">For the first time ever</span>, we're offering our <span className="font-semibold">proven lead system</span> as a 6-month trial. <span className="underline">Works with your current CRM</span> and <span className="font-bold">guarantees buyer leads in 7 days</span> - no 12-month contract required.
             </p>
             <div 
               ref={ctaRef} 
