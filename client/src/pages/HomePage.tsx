@@ -56,9 +56,11 @@ const HomePage = () => {
       {/* Solution Section with new animations */}
       <SolutionSection />
       
+      {/* How It Works Section with new animations */}
+      <HowItWorksSection />
+      
       {/* Components still commented out for now */}
       {/*
-      <HowItWorksSection />
       <FeaturesSection />
       <TestimonialsSection />
       <ComparisonSection />
