@@ -69,7 +69,7 @@ const Navbar = () => {
           onClick={() => scrollToSection("cta")} 
           className="hidden md:block bg-primary hover:bg-primary/90 text-white font-bold py-3 px-6 rounded-lg transition shadow-md"
         >
-          Get Started
+          Get 6-Month Lead Machine
         </button>
         <button 
           className="md:hidden text-secondary" 
@@ -111,7 +111,7 @@ const Navbar = () => {
             onClick={() => scrollToSection("cta")} 
             className="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-6 rounded-lg text-center transition shadow-md"
           >
-            Get Started
+            Get 6-Month Lead Machine
           </button>
         </div>
       </div>

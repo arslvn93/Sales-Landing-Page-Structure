@@ -275,10 +275,10 @@ const SalesLetterSection = () => {
           <div className="bg-gray-100 p-6 rounded-xl border-2 border-gray-200 mt-8">
             <p className="italic flex items-start">
               <span className="text-2xl mr-3">💬</span>
-              Here's what one agent told us last November:
+              Here's what Jessica, a 31-year-old agent from Denver, shared last month:
             </p>
             <p className="mt-4 text-secondary bg-white p-4 rounded-lg">
-              "I almost didn't sign up because it was 'late in the year.' That would have been the biggest mistake of my career. While everyone checked out for the holidays, I closed 4 transactions in December from the leads you generated, then started January with 6 deals already in the pipeline. It was like getting a 3-month head start on everyone else."
+              "Before this, I was spending hours trying to figure out Facebook and Instagram ads myself. I wasted so much money and time. With SalesGenius, I literally just show up for the weekly coaching call, and the leads come in automatically. I closed 4 transactions in my first 45 days with the leads they generated. The best part? I can actually have a life outside of real estate now instead of being glued to my laptop trying to figure out marketing."
             </p>
           </div>
           

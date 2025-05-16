@@ -71,13 +71,13 @@ const HeroSection = () => {
               ref={titleRef} 
               className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
             >
-              Generate Consistent <span className="text-accent">Leads</span> in 6 Months or Less
+              Get <span className="text-accent">Qualified Real Estate Leads</span> in Just 7 Days
             </h1>
             <p 
               ref={subtitleRef} 
               className="text-xl mb-8 text-gray-100"
             >
-              The proven system that has helped over 10,000 businesses build a reliable lead generation machine that delivers qualified prospects month after month.
+              The Spring Special Fast-Track System for ambitious agents who want consistent buyer and seller leads without the hassle of managing their own marketing campaigns.
             </p>
             <div 
               ref={ctaRef} 
@@ -87,25 +87,25 @@ const HeroSection = () => {
                 onClick={() => scrollToSection("cta")} 
                 className="bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-lg text-center transition shadow-lg"
               >
-                Secure Your Spot
+                SECURE YOUR SPOT - ONLY 6 AVAILABLE
               </button>
               <button 
                 onClick={() => scrollToSection("how-it-works")} 
                 className="bg-white hover:bg-gray-100 text-secondary font-bold py-4 px-8 rounded-lg text-center transition"
               >
-                Learn More
+                See How It Works
               </button>
             </div>
           </div>
           <div className="md:w-1/2 relative">
             <img 
               ref={imageRef}
-              src="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80" 
-              alt="Business professional working on lead generation strategy" 
+              src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80" 
+              alt="Successful real estate agent with satisfied clients" 
               className="rounded-lg shadow-2xl"
             />
             <div className="absolute -bottom-6 -left-6 bg-accent text-secondary p-4 rounded-lg shadow-lg">
-              <p className="font-bold">Next Cohort: <span id="remaining-spots">7</span> Spots Left</p>
+              <p className="font-bold">SPRING SPECIAL: <span id="remaining-spots">6</span> Spots Left</p>
             </div>
           </div>
         </div>
