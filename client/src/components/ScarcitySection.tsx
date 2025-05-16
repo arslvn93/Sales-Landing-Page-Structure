@@ -214,7 +214,7 @@ const ScarcitySection = () => {
           <div className="text-center mb-8">
             <h3 
               ref={countdownTitleRef}
-              className="text-2xl font-bold mb-2"
+              className="text-2xl font-bold mb-2 text-white"
             >
               Next Cohort Starts In:
             </h3>
