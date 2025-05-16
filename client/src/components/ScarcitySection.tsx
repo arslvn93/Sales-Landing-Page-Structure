@@ -269,7 +269,7 @@ const ScarcitySection = () => {
             ref={noteRef}
             className="text-lg mb-6"
           >
-            <i className="fas fa-info-circle mr-2"></i> If you miss this cohort, the next one won't start until <span className="text-accent font-bold">3 months later</span>.
+            <i className="fas fa-info-circle mr-2"></i> We've never offered this program before and <span className="text-accent font-bold">we're not sure if we'll offer it again</span>.
           </p>
         </div>
       </div>

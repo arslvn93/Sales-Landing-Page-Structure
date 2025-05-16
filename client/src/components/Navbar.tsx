@@ -37,7 +37,7 @@ const Navbar = () => {
     <nav className={`bg-white py-4 px-6 shadow-sm sticky top-0 z-50 transition-all ${scrolled ? "shadow-md" : ""}`}>
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-2xl font-heading font-bold">
-          <span className="text-primary text-2xl font-bold">SALES<span className="text-secondary">GENIUS</span></span>
+          <img src="/attached_assets/SG LOGO - Black Text.png" alt="SalesGenius" className="h-8" />
         </Link>
         <div className="hidden md:flex items-center space-x-8">
           <button 
