@@ -168,22 +168,22 @@ const TestimonialsSection = () => {
             <div className="text-center bg-white/10 p-4 rounded-lg">
               <div className="text-4xl text-accent mb-2">🎯</div>
               <div className="text-3xl font-bold text-white mb-1">33.7</div>
-              <p className="text-sm font-medium mb-1">LEADS PER MONTH</p>
-              <p className="text-xs text-gray-300">for the typical agent</p>
+              <p className="text-sm font-medium mb-1 text-white">LEADS PER MONTH</p>
+              <p className="text-xs text-white">for the typical agent</p>
             </div>
             
             <div className="text-center bg-white/10 p-4 rounded-lg">
               <div className="text-4xl text-accent mb-2">💰</div>
               <div className="text-3xl font-bold text-white mb-1">$6.20</div>
               <p className="text-sm font-medium mb-1">COST PER LEAD</p>
-              <p className="text-xs text-gray-300">in efficient campaigns</p>
+              <p className="text-xs text-white">in efficient campaigns</p>
             </div>
             
             <div className="text-center bg-white/10 p-4 rounded-lg">
               <div className="text-4xl text-accent mb-2">📈</div>
               <div className="text-3xl font-bold text-white mb-1">3.7%</div>
               <p className="text-sm font-medium mb-1">CLICK RATE</p>
-              <p className="text-xs text-gray-300">4.1x industry average</p>
+              <p className="text-xs text-white">4.1x industry average</p>
             </div>
           </div>
         </div>

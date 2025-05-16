@@ -96,7 +96,7 @@ const SalesLetterSection = () => {
             <i className="fas fa-star"></i>
             <i className="fas fa-star"></i>
           </div>
-          <p className="text-sm text-gray-600">579 reviews</p>
+          <p className="text-sm text-white">579 reviews</p>
         </div>
         
         {/* Big Bold Headline */}
