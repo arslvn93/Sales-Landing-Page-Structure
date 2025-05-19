@@ -9,16 +9,16 @@ const TestimonialsSection = () => {
       content: "Working with Ryan, Emma and Rebecca at SalesGenius has completely changed my business. I signed up for the program at a time in my career when I was really struggling, and genuinely unsure whether or not I was going to make it in real estate. I consider the money I spent on this coaching to be one of the best investments I have ever made."
     },
     {
-      name: "James Anderson",
-      role: "Real Estate Professional",
-      image: "/images/James Anderson.jpg",
-      content: "No BS, No Pressure. It taught me how to decipher if a lead has real intentions and potential and was worth my time to move forward with them. You can tell throughout the course that these 2 both have trained hundreds of agents and learned from the best!"
-    },
-    {
       name: "Shar Banifatemi",
       role: "Real Estate Team Leader",
       image: "/images/Shar.png",
       content: "I joined the basic program to start and eventually switched over to their top plan with our team. This program will improve everything about your business and they literally open all of their systems for you to see. This is the first program I've done where I actually implement most things we learn immediately, mainly because Ryan and Emma give practical actionable items to use right away in our day to day business."
+    },
+    {
+      name: "Sherry Rampersaud",
+      role: "Seasoned Real Estate Agent",
+      image: "/images/Sherry.png",
+      content: "Sales genius will help you get accountable!!! You will do way more than you are doing right now. The resources they have to support you step-by-step process for a very seasoned agent that wants to stay on top of their technology and increase their knowledge based And top-tier for new Agents who wants to build a good habits and learn how to do things Most efficiently and habitually."
     }
   ];
 
@@ -162,33 +162,32 @@ const TestimonialsSection = () => {
 
         </div>
         
-        {/* Featured Testimonial */}
-        <div className="max-w-4xl mx-auto mb-16 bg-white/10 p-8 rounded-xl">
-          <h3 className="text-2xl font-bold text-white text-center mb-8">
+        {/* Featured Testimonial Section - Fixed to match the screenshot */}
+        <div className="max-w-4xl mx-auto mb-16 bg-white p-0 rounded-xl shadow-lg overflow-hidden">
+          <h3 className="text-4xl font-bold text-[#4171C9] text-center py-6">
             What Our Clients Say
           </h3>
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+          
+          <img 
+            src="/images/pro-photo.jpeg" 
+            alt="Real estate professionals in a meeting" 
+            className="w-full h-auto mb-4"
+          />
+          
+          <div className="p-8">
+            <p className="text-gray-700 text-xl italic mb-8">
+              "I was skeptical at first and almost asked for a refund in week 2. But the coaches encouraged me to stick with it, and by month 3 I had already secured consistent lead flow generating 15 qualified prospects weekly. This program is worth every penny and more."
+            </p>
+            
+            <div className="flex items-center mb-4">
               <img 
-                src="/images/pro-photo.jpeg" 
-                alt="Real estate professionals in a meeting" 
-                className="rounded-lg shadow-lg w-full"
+                src="/images/James Anderson.jpg" 
+                alt="James Anderson" 
+                className="w-16 h-16 rounded-full object-cover mr-4"
               />
-            </div>
-            <div className="md:w-1/2">
-              <p className="text-white text-lg italic mb-6">
-                "I was skeptical at first and almost asked for a refund in week 2. But the coaches encouraged me to stick with it, and by month 3 I had already secured consistent lead flow generating 15 qualified prospects weekly. This program is worth every penny and more."
-              </p>
-              <div className="flex items-center">
-                <img 
-                  src="/images/James Anderson.jpg" 
-                  alt="James Anderson" 
-                  className="w-16 h-16 rounded-full object-cover mr-4"
-                />
-                <div>
-                  <h4 className="font-bold text-white">James Anderson</h4>
-                  <p className="text-sm text-gray-300">Real Estate Professional</p>
-                </div>
+              <div>
+                <h4 className="font-bold text-gray-800 text-xl">James Anderson</h4>
+                <p className="text-gray-600">Real Estate Professional</p>
               </div>
             </div>
           </div>
