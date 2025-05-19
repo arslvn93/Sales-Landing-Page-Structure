@@ -191,17 +191,17 @@ const GuaranteeSection = () => {
               />
               <div className="p-8">
                 <p className="text-gray-700 text-lg italic mb-6">
-                  "I was skeptical at first and almost asked for a refund in week 2. But the coaches encouraged me to stick with it, and by month 3 I had already secured consistent lead flow generating 15 qualified prospects weekly. This program is worth every penny and more."
+                  "This was just the product I was looking for... No BS, No Pressure. It taught me how to decipher if a lead has real intentions and potential and was worth my time to move forward with them. You can tell throughout the course that these 2 both have trained hundreds of agents and learned from the best!"
                 </p>
                 <div className="flex items-center">
                   <img 
-                    src="/images/tmpeg4vf10p.webp" 
-                    alt="David Chen" 
+                    src="/images/James Anderson.jpg" 
+                    alt="James Anderson" 
                     className="w-16 h-16 rounded-full object-cover mr-4"
                   />
                   <div>
-                    <h4 className="font-bold text-gray-800 text-xl">David Chen</h4>
-                    <p className="text-sm text-gray-600">B2B Services Provider</p>
+                    <h4 className="font-bold text-gray-800 text-xl">James Anderson</h4>
+                    <p className="text-sm text-gray-600">Real Estate Professional</p>
                   </div>
                 </div>
               </div>
