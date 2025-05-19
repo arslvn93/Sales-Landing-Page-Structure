@@ -170,8 +170,8 @@ const TestimonialsSection = () => {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-6 md:mb-0 md:pr-8">
               <img 
-                src="/images/tmpeg4vf10p.webp" 
-                alt="SalesGenius coaching session" 
+                src="/images/pro-photo.jpeg" 
+                alt="Real estate professionals in a meeting" 
                 className="rounded-lg shadow-lg w-full"
               />
             </div>
