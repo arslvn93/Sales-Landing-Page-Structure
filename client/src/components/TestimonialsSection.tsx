@@ -9,16 +9,16 @@ const TestimonialsSection = () => {
       content: "Working with Ryan, Emma and Rebecca at SalesGenius has completely changed my business. I signed up for the program at a time in my career when I was really struggling, and genuinely unsure whether or not I was going to make it in real estate. I consider the money I spent on this coaching to be one of the best investments I have ever made."
     },
     {
+      name: "James Anderson",
+      role: "Real Estate Professional",
+      image: "/images/James Anderson.jpg",
+      content: "No BS, No Pressure. It taught me how to decipher if a lead has real intentions and potential and was worth my time to move forward with them. You can tell throughout the course that these 2 both have trained hundreds of agents and learned from the best!"
+    },
+    {
       name: "Shar Banifatemi",
       role: "Real Estate Team Leader",
       image: "/images/Shar.png",
-      content: "I joined the basic program to start and eventually switched over to their top plan with our team. This program will improve everything about your business and they literally open all of their systems for you to see. This is the first program I've done where I actually implement most things we learn immediately, mainly because Ryan and Emma give practical actionable items to use right away in our day to day business. On top of all of the training, they're now also setting up a marketing hub for us and generating leads. We're half way through the program and it's already a home run in terms of value. 100% recommend the program they have a different levels of the program for all levels and needs of your career."
-    },
-    {
-      name: "Sherry Rampersaud",
-      role: "Seasoned Real Estate Agent",
-      image: "/images/Sherry.png",
-      content: "Sales genius will help you get accountable!!! You will do way more than you are doing right now. The resources they have to support you step-by-step process for a very seasoned agent that wants to stay on top of their technology and increase their knowledge based And top-tier for new Agents who wants to build a good habits and learn how to do things Most efficiently and habitually."
+      content: "I joined the basic program to start and eventually switched over to their top plan with our team. This program will improve everything about your business and they literally open all of their systems for you to see. This is the first program I've done where I actually implement most things we learn immediately, mainly because Ryan and Emma give practical actionable items to use right away in our day to day business."
     }
   ];
 

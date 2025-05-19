@@ -101,8 +101,8 @@ const HeroSection = () => {
           <div className="md:w-1/2 relative">
             <img 
               ref={imageRef}
-              src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80" 
-              alt="Successful real estate agent with satisfied clients" 
+              src="/images/tmpeg4vf10p.webp" 
+              alt="SalesGenius coaching group call with real estate agents" 
               className="rounded-lg shadow-2xl"
             />
             <div className="absolute -bottom-6 -left-6 bg-accent text-secondary p-4 rounded-lg shadow-lg">
