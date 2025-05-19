@@ -181,26 +181,28 @@ const GuaranteeSection = () => {
           <div className="md:w-1/2 md:pl-12">
             <div 
               ref={testimonialRef}
-              className="bg-white p-8 rounded-xl shadow-xl"
+              className="bg-white p-0 rounded-xl shadow-xl overflow-hidden"
             >
-              <h3 className="text-2xl font-bold mb-6 text-secondary">What Our Clients Say</h3>
+              <h3 className="text-3xl font-bold text-[#4171C9] text-center py-6">What Our Clients Say</h3>
               <img 
-                src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" 
-                alt="Business owner working on lead generation" 
-                className="rounded-lg mb-6 w-full"
+                src="/images/client-group.png" 
+                alt="Group of real estate professionals collaborating" 
+                className="w-full h-auto"
               />
-              <div className="text-gray-700 italic mb-4">
-                "I was skeptical at first and almost asked for a refund in week 2. But the coaches encouraged me to stick with it, and by month 3 I had already secured consistent lead flow generating 15 qualified prospects weekly. This program is worth every penny and more."
-              </div>
-              <div className="flex items-center">
-                <img 
-                  src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&h=80&q=80" 
-                  alt="David Chen" 
-                  className="w-12 h-12 rounded-full object-cover mr-4"
-                />
-                <div>
-                  <h5 className="font-bold">David Chen</h5>
-                  <p className="text-sm text-gray-600">B2B Services Provider</p>
+              <div className="p-8">
+                <p className="text-gray-700 text-lg italic mb-6">
+                  "I was skeptical at first and almost asked for a refund in week 2. But the coaches encouraged me to stick with it, and by month 3 I had already secured consistent lead flow generating 15 qualified prospects weekly. This program is worth every penny and more."
+                </p>
+                <div className="flex items-center">
+                  <img 
+                    src="/images/tmpeg4vf10p.webp" 
+                    alt="David Chen" 
+                    className="w-16 h-16 rounded-full object-cover mr-4"
+                  />
+                  <div>
+                    <h4 className="font-bold text-gray-800 text-xl">David Chen</h4>
+                    <p className="text-sm text-gray-600">B2B Services Provider</p>
+                  </div>
                 </div>
               </div>
             </div>

@@ -162,36 +162,7 @@ const TestimonialsSection = () => {
 
         </div>
         
-        {/* Featured Testimonial Section - Fixed to match the screenshot */}
-        <div className="max-w-4xl mx-auto mb-16 bg-white p-0 rounded-xl shadow-lg overflow-hidden">
-          <h3 className="text-4xl font-bold text-[#4171C9] text-center py-6">
-            What Our Clients Say
-          </h3>
-          
-          <img 
-            src="/images/client-group.png" 
-            alt="Group of real estate professionals collaborating" 
-            className="w-full h-auto mb-4"
-          />
-          
-          <div className="p-8">
-            <p className="text-gray-700 text-xl italic mb-8">
-              "I was skeptical at first and almost asked for a refund in week 2. But the coaches encouraged me to stick with it, and by month 3 I had already secured consistent lead flow generating 15 qualified prospects weekly. This program is worth every penny and more."
-            </p>
-            
-            <div className="flex items-center mb-4">
-              <img 
-                src="/images/tmpeg4vf10p.webp" 
-                alt="David Chen" 
-                className="w-16 h-16 rounded-full object-cover mr-4"
-              />
-              <div>
-                <h4 className="font-bold text-gray-800 text-xl">David Chen</h4>
-                <p className="text-gray-600">B2B Services Provider</p>
-              </div>
-            </div>
-          </div>
-        </div>
+
         
         {/* Top 3 Most Powerful Stats Above Testimonials */}
         <div className="flex justify-center mb-12">
