@@ -275,10 +275,10 @@ const SalesLetterSection = () => {
           <div className="bg-gray-100 p-6 rounded-xl border-2 border-gray-200 mt-8">
             <p className="italic flex items-start">
               <span className="text-2xl mr-3">💬</span>
-              Here's what Jessica, a 31-year-old agent from Denver, shared last month:
+              Here's what Clair B, an agent with less than 12 months of experience, shared - now converting leads & doing more deals than veteran agents with 7+ years of experience:
             </p>
             <p className="mt-4 text-secondary bg-white p-4 rounded-lg">
-              "Before this, I was spending hours trying to figure out Facebook and Instagram ads myself. I wasted so much money and time. With SalesGenius, I literally just show up for the weekly coaching call, and the leads come in automatically. I closed 4 transactions in my first 45 days with the leads they generated. The best part? I can actually have a life outside of real estate now instead of being glued to my laptop trying to figure out marketing."
+              "50k cash renters... into Pre-Approved million dollar buyers! Text from post in person strategy session with my 'renter' clients - 'You are the absolute best Clair. I am getting things lined up for Dan the mortgage agent you introduced us too, hes awesome. After discussion last night it is clear that 'with approval' we will prefer to give the home ownership a good go!' BOOM Thank you again everyone for the support!"
             </p>
           </div>
           

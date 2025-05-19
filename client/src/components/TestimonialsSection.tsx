@@ -3,22 +3,22 @@ import { useEffect, useRef } from "react";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "Digital Marketing Agency",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
-      content: "Before this program, I was spending thousands on ads with inconsistent results. Within 3 months of implementing the Lead Machine system, our lead generation costs dropped by 60% while our qualified leads tripled. Our agency now has a waiting list of clients!"
+      name: "Tim Connolly",
+      role: "Real Estate Agent",
+      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
+      content: "Working with Ryan, Emma and Rebecca at SalesGenius has completely changed my business. I signed up for the program at a time in my career when I was really struggling, and genuinely unsure whether or not I was going to make it in real estate. I consider the money I spent on this coaching to be one of the best investments I have ever made."
     },
     {
-      name: "Michael Rodriguez",
-      role: "SaaS Founder",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
-      content: "The program gave me the exact blueprint I needed to generate consistent leads for our SaaS product. The coaching was instrumental—I avoided mistakes that would have cost me thousands of dollars and months of wasted effort. We've grown our user base by 215% in just 6 months."
+      name: "Shar Banifatemi",
+      role: "Real Estate Team Leader",
+      image: "https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
+      content: "I joined the basic program to start and eventually switched over to their top plan with our team. This program will improve everything about your business and they literally open all of their systems for you to see. This is the first program I've done where I actually implement most things we learn immediately, mainly because Ryan and Emma give practical actionable items to use right away in our day to day business. On top of all of the training, they're now also setting up a marketing hub for us and generating leads. We're half way through the program and it's already a home run in terms of value. 100% recommend the program they have a different levels of the program for all levels and needs of your career."
     },
     {
-      name: "Jennifer Lewis",
-      role: "Real Estate Broker",
-      image: "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
-      content: "I was stuck in a cycle of feast or famine with my real estate business. This program helped me transform it into a predictable operation with consistent leads and closings. My income has tripled in just 6 months, and I've been able to hire two assistants to handle the growth."
+      name: "Sherry Rampersaud",
+      role: "Seasoned Real Estate Agent",
+      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80",
+      content: "Sales genius will help you get accountable!!! You will do way more than you are doing right now. The resources they have to support you step-by-step process for a very seasoned agent that wants to stay on top of their technology and increase their knowledge based And top-tier for new Agents who wants to build a good habits and learn how to do things Most efficiently and habitually."
     }
   ];
 
