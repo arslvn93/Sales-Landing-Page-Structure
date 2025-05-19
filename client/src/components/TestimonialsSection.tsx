@@ -211,8 +211,8 @@ const TestimonialsSection = () => {
                   </div>
                 </div>
                 
-                <div className="bg-gray-100 p-4 rounded-lg border border-gray-300">
-                  <p className="text-black text-base font-medium mb-0">
+                <div className="bg-gray-800 p-4 rounded-lg border border-gray-500">
+                  <p className="text-white text-base font-semibold mb-0">
                     "{testimonial.content}"
                   </p>
                 </div>
