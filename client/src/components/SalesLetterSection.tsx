@@ -109,52 +109,52 @@ const SalesLetterSection = () => {
         
         {/* Performance Metrics Box After Headline */}
         <div className="flex justify-center mb-16">
-          <div className="bg-[#1c1c1c] text-white p-8 rounded-xl max-w-4xl mx-auto shadow-xl">
+          <div className="bg-[#1c1c1c] text-white p-4 md:p-8 rounded-xl max-w-4xl mx-auto shadow-xl">
             <h3 className="text-xl font-bold mb-6 border-b border-white/20 pb-4 text-center">
               REAL PERFORMANCE METRICS FROM CURRENT AGENT CAMPAIGNS:
             </h3>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="text-center">
+              <div className="text-center p-2 bg-[#222] rounded-lg">
                 <div className="text-4xl text-accent mb-2">🎯</div>
-                <div className="text-3xl font-bold text-white mb-1">33.7 LEADS</div>
+                <div className="text-2xl md:text-3xl font-bold text-white mb-1">33.7 LEADS</div>
                 <p className="text-sm font-medium mb-1 text-white">PER MONTH</p>
                 <p className="text-xs text-white">for the typical agent in our program</p>
               </div>
               
-              <div className="text-center">
+              <div className="text-center p-2 bg-[#222] rounded-lg">
                 <div className="text-4xl text-accent mb-2">💰</div>
-                <div className="text-3xl font-bold text-white mb-1">$6.20 COST</div>
+                <div className="text-2xl md:text-3xl font-bold text-white mb-1">$6.20 COST</div>
                 <p className="text-sm font-medium mb-1 text-white">PER LEAD</p>
                 <p className="text-xs text-white">in our most efficient campaigns</p>
               </div>
               
-              <div className="text-center">
+              <div className="text-center p-2 bg-[#222] rounded-lg">
                 <div className="text-4xl text-accent mb-2">📈</div>
-                <div className="text-3xl font-bold text-white mb-1">3.7% CLICK</div>
+                <div className="text-2xl md:text-3xl font-bold text-white mb-1">3.7% CLICK</div>
                 <p className="text-sm font-medium mb-1 text-white">RATE</p>
                 <p className="text-xs text-white">4.1x HIGHER than industry average of 0.9%</p>
               </div>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="text-center">
+              <div className="text-center p-2 bg-[#222] rounded-lg">
                 <div className="text-4xl text-accent mb-2">🚀</div>
-                <div className="text-3xl font-bold text-white mb-1">76% OF AGENTS</div>
+                <div className="text-2xl md:text-3xl font-bold text-white mb-1">76% OF AGENTS</div>
                 <p className="text-sm font-medium mb-1 text-white">see cost-per-lead</p>
                 <p className="text-xs text-white">improvements within 90 days</p>
               </div>
               
-              <div className="text-center">
+              <div className="text-center p-2 bg-[#222] rounded-lg">
                 <div className="text-4xl text-accent mb-2">👁️</div>
-                <div className="text-3xl font-bold text-white mb-1">20,000+</div>
+                <div className="text-2xl md:text-3xl font-bold text-white mb-1">20,000+</div>
                 <p className="text-sm font-medium mb-1 text-white">MONTHLY AD</p>
                 <p className="text-xs text-white">VIEWS for the average agent</p>
               </div>
               
-              <div className="text-center">
+              <div className="text-center p-2 bg-[#222] rounded-lg">
                 <div className="text-4xl text-accent mb-2">📊</div>
-                <div className="text-3xl font-bold text-white mb-1">$11.80 AVERAGE</div>
+                <div className="text-2xl md:text-3xl font-bold text-white mb-1">$11.80 AVERAGE</div>
                 <p className="text-sm font-medium mb-1 text-white">COST PER LEAD</p>
                 <p className="text-xs text-white">across all agents (55% below industry average)</p>
               </div>
@@ -165,7 +165,7 @@ const SalesLetterSection = () => {
         {/* Sales Letter Content - Modern Style with Emojis and Highlights */}
         <div 
           ref={letterContentRef}
-          className="max-w-3xl mx-auto text-lg text-gray-700 space-y-6"
+          className="max-w-3xl mx-auto text-lg text-gray-700 space-y-6 px-4 md:px-0"
         >
           <p className="font-bold text-xl text-center text-secondary">👋 Dear Real Estate Agent Who Wants to Make 2025 Your Best Year Yet,</p>
           
