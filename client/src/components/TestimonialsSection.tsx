@@ -162,6 +162,38 @@ const TestimonialsSection = () => {
 
         </div>
         
+        {/* Featured Testimonial */}
+        <div className="max-w-4xl mx-auto mb-16 bg-white/10 p-8 rounded-xl">
+          <h3 className="text-2xl font-bold text-white text-center mb-8">
+            What Our Clients Say
+          </h3>
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+              <img 
+                src="/images/tmpeg4vf10p.webp" 
+                alt="SalesGenius coaching session" 
+                className="rounded-lg shadow-lg w-full"
+              />
+            </div>
+            <div className="md:w-1/2">
+              <p className="text-white text-lg italic mb-6">
+                "I was skeptical at first and almost asked for a refund in week 2. But the coaches encouraged me to stick with it, and by month 3 I had already secured consistent lead flow generating 15 qualified prospects weekly. This program is worth every penny and more."
+              </p>
+              <div className="flex items-center">
+                <img 
+                  src="/images/James Anderson.jpg" 
+                  alt="James Anderson" 
+                  className="w-16 h-16 rounded-full object-cover mr-4"
+                />
+                <div>
+                  <h4 className="font-bold text-white">James Anderson</h4>
+                  <p className="text-sm text-gray-300">Real Estate Professional</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
         {/* Top 3 Most Powerful Stats Above Testimonials */}
         <div className="flex justify-center mb-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
