@@ -196,7 +196,7 @@ const TestimonialsSection = () => {
             <div key={index} className="w-full lg:w-1/3 px-4 mb-8">
               <div 
                 ref={el => testimonialRefs.current[index] = el}
-                className="bg-white text-secondary p-8 rounded-lg shadow-xl h-full hover:shadow-2xl transition-shadow duration-300"
+                className="bg-white p-8 rounded-lg shadow-xl h-full hover:shadow-2xl transition-shadow duration-300"
               >
                 <div className="flex items-center mb-6">
                   <img 
@@ -205,14 +205,14 @@ const TestimonialsSection = () => {
                     className="w-16 h-16 rounded-full object-cover mr-4"
                   />
                   <div>
-                    <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
-                    <p className="text-sm text-gray-700">{testimonial.role}</p>
+                    <h4 className="font-bold text-black text-xl">{testimonial.name}</h4>
+                    <p className="text-sm text-black">{testimonial.role}</p>
                   </div>
                 </div>
-                <p className="text-gray-800 mb-4">
+                <p className="text-black text-base font-medium mb-4">
                   "{testimonial.content}"
                 </p>
-                <div className="text-accent">
+                <div className="text-blue-600">
                   <i className="fas fa-star"></i>
                   <i className="fas fa-star"></i>
                   <i className="fas fa-star"></i>
