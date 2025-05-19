@@ -205,11 +205,11 @@ const TestimonialsSection = () => {
                     className="w-16 h-16 rounded-full object-cover mr-4"
                   />
                   <div>
-                    <h4 className="font-bold">{testimonial.name}</h4>
-                    <p className="text-sm text-gray-600">{testimonial.role}</p>
+                    <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
+                    <p className="text-sm text-gray-700">{testimonial.role}</p>
                   </div>
                 </div>
-                <p className="text-gray-700 mb-4">
+                <p className="text-gray-800 mb-4">
                   "{testimonial.content}"
                 </p>
                 <div className="text-accent">
