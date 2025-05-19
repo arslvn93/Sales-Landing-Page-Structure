@@ -197,6 +197,7 @@ const TestimonialsSection = () => {
               <div 
                 ref={el => testimonialRefs.current[index] = el}
                 className="bg-white p-8 rounded-lg shadow-xl h-full hover:shadow-2xl transition-shadow duration-300"
+                style={{background: "#ffffff"}}
               >
                 <div className="flex items-center mb-6">
                   <img 
@@ -209,10 +210,14 @@ const TestimonialsSection = () => {
                     <p className="text-sm text-black">{testimonial.role}</p>
                   </div>
                 </div>
-                <p className="text-black text-base font-medium mb-4">
-                  "{testimonial.content}"
-                </p>
-                <div className="text-blue-600">
+                
+                <div className="bg-gray-100 p-4 rounded-lg border border-gray-300">
+                  <p className="text-black text-base font-medium mb-0">
+                    "{testimonial.content}"
+                  </p>
+                </div>
+                
+                <div className="text-blue-600 mt-4">
                   <i className="fas fa-star"></i>
                   <i className="fas fa-star"></i>
                   <i className="fas fa-star"></i>
