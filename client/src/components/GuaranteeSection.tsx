@@ -185,8 +185,8 @@ const GuaranteeSection = () => {
             >
               <h3 className="text-3xl font-bold text-[#4171C9] text-center py-6">What Our Clients Say</h3>
               <img 
-                src="/images/client-group.png" 
-                alt="Group of real estate professionals collaborating" 
+                src="/images/classroom-photo.jpeg" 
+                alt="Real estate professionals in a classroom setting" 
                 className="w-full h-auto"
               />
               <div className="p-8">
