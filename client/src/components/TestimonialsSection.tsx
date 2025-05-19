@@ -169,8 +169,8 @@ const TestimonialsSection = () => {
           </h3>
           
           <img 
-            src="/images/pro-photo.jpeg" 
-            alt="Real estate professionals in a meeting" 
+            src="/images/client-group.png" 
+            alt="Group of real estate professionals collaborating" 
             className="w-full h-auto mb-4"
           />
           
@@ -181,13 +181,13 @@ const TestimonialsSection = () => {
             
             <div className="flex items-center mb-4">
               <img 
-                src="/images/James Anderson.jpg" 
-                alt="James Anderson" 
+                src="/images/tmpeg4vf10p.webp" 
+                alt="David Chen" 
                 className="w-16 h-16 rounded-full object-cover mr-4"
               />
               <div>
-                <h4 className="font-bold text-gray-800 text-xl">James Anderson</h4>
-                <p className="text-gray-600">Real Estate Professional</p>
+                <h4 className="font-bold text-gray-800 text-xl">David Chen</h4>
+                <p className="text-gray-600">B2B Services Provider</p>
               </div>
             </div>
           </div>
