@@ -82,8 +82,8 @@ const SalesLetterSection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="bg-white py-16">
-      <div className="container mx-auto px-6">
+    <section ref={sectionRef} className="bg-white py-16 overflow-x-hidden">
+      <div className="container mx-auto px-4 sm:px-6">
         {/* Social Proof Stars */}
         <div 
           ref={socialProofRef}
@@ -108,8 +108,8 @@ const SalesLetterSection = () => {
         </h2>
         
         {/* Performance Metrics Box After Headline */}
-        <div className="flex justify-center mb-16">
-          <div className="bg-[#1c1c1c] text-white p-4 md:p-8 rounded-xl max-w-4xl mx-auto shadow-xl">
+        <div className="flex justify-center mb-16 w-full">
+          <div className="bg-[#1c1c1c] text-white p-4 md:p-8 rounded-xl w-full mx-auto shadow-xl">
             <h3 className="text-xl font-bold mb-6 border-b border-white/20 pb-4 text-center">
               REAL PERFORMANCE METRICS FROM CURRENT AGENT CAMPAIGNS:
             </h3>
@@ -165,7 +165,7 @@ const SalesLetterSection = () => {
         {/* Sales Letter Content - Modern Style with Emojis and Highlights */}
         <div 
           ref={letterContentRef}
-          className="max-w-3xl mx-auto text-lg text-gray-700 space-y-6 px-4 md:px-0"
+          className="max-w-3xl mx-auto text-lg text-gray-800 space-y-6 px-4 md:px-0 bg-white"
         >
           <p className="font-bold text-xl text-center text-secondary">👋 Dear Real Estate Agent Who Wants to Make 2025 Your Best Year Yet,</p>
           
