@@ -308,9 +308,9 @@ const FeaturesSection = () => {
           ref={pricingBoxRef}
           className="mt-12 bg-primary rounded-xl p-8 text-white text-center max-w-3xl mx-auto shadow-xl"
         >
-          <h3 className="text-2xl font-bold mb-3 text-white">TOTAL VALUE: <span className="line-through text-white mr-2">$19,888</span><span className="text-white bg-[#1c65b8] px-3 py-1 rounded-md">$19,888</span></h3>
-          <p className="text-xl mb-6">YOUR INVESTMENT: <span className="text-white font-bold bg-[#1c65b8] px-3 py-1 rounded-md">$3,000 upfront + $500/month for 6 months</span></p>
-          <p className="text-lg mb-6">(Save $4,000 off the regular price of $10,000)</p>
+          <h3 className="text-2xl font-bold mb-3 text-white">TOTAL VALUE: <span className="line-through text-white">$19,888</span></h3>
+          <p className="text-xl mb-6">SPRING SALE INVESTMENT ONLY: <span className="text-white font-bold bg-[#1c65b8] px-3 py-1 rounded-md">$3,000 upfront + $500/month for 6 months</span></p>
+          <p className="text-lg mb-6">(Save $4,000 off regular price without the bonuses!)</p>
           <button 
             onClick={() => scrollToSection("cta")} 
             className="inline-block bg-white text-primary hover:bg-gray-100 font-bold py-4 px-8 rounded-lg transition shadow-md"
