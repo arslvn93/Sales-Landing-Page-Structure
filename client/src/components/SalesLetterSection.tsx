@@ -82,8 +82,8 @@ const SalesLetterSection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="bg-white py-16 overflow-x-hidden">
-      <div className="container mx-auto px-4 sm:px-6">
+    <section ref={sectionRef} className="bg-white py-16 overflow-x-hidden relative">
+      <div className="container mx-auto px-4 sm:px-6 relative">
         {/* Social Proof Stars */}
         <div 
           ref={socialProofRef}
@@ -165,7 +165,8 @@ const SalesLetterSection = () => {
         {/* Sales Letter Content - Modern Style with Emojis and Highlights */}
         <div 
           ref={letterContentRef}
-          className="max-w-3xl mx-auto text-lg text-gray-800 space-y-6 px-4 md:px-0 bg-white"
+          className="max-w-3xl mx-auto text-lg text-gray-800 space-y-6 px-4 md:px-0 bg-white w-full relative z-10"
+          style={{ color: '#333' }}
         >
           <p className="font-bold text-xl text-center text-secondary">👋 Dear Real Estate Agent Who Wants to Make 2025 Your Best Year Yet,</p>
           
