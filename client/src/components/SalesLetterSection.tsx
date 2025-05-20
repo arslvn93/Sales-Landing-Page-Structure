@@ -230,22 +230,26 @@ const SalesLetterSection = () => {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-secondary">
-                LEADS IN <span className="text-primary">7 DAYS</span> OR FREE
+                OUR "LEADS IN <span className="text-primary">7 DAYS</span>" GUARANTEE
               </h3>
             </div>
             
             <p className="text-lg mb-4">
-              If we don't generate qualified buyer leads for you within the first 7 days, you get the first month completely free. No questions asked.
+              We're so confident in our system that we offer a guarantee no other marketing company would dare make.
             </p>
             
             <ul className="space-y-2">
               <li className="flex items-start">
                 <span className="text-primary mt-1 mr-2 font-bold">●</span>
-                <span><strong>Performance Guarantee:</strong> We deliver quality leads or you don't pay</span>
+                <span><strong>We guarantee actual leads in your CRM within 7 days or you get a complete refund</strong></span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary mt-1 mr-2 font-bold">●</span>
-                <span><strong>Quality Assurance:</strong> All leads pre-qualified and verified</span>
+                <span>Not vague promises. Not "coming soon" excuses. ACTUAL LEADS in your system within your first week</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-primary mt-1 mr-2 font-bold">●</span>
+                <span>If we don't deliver, you get every penny back - no questions asked</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary mt-1 mr-2 font-bold">●</span>
