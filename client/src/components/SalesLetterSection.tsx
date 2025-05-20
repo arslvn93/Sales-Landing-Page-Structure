@@ -305,21 +305,15 @@ const SalesLetterSection = () => {
           </ul>
           
           <div className="text-center mt-12">
-            <button 
+            <a 
               ref={ctaButtonRef}
-              onClick={() => {
-                const element = document.getElementById("cta");
-                if (element) {
-                  window.scrollTo({
-                    top: element.offsetTop - 80,
-                    behavior: "smooth",
-                  });
-                }
-              }}
-              className="inline-block bg-primary hover:bg-primary/90 text-white font-bold py-5 px-10 rounded-xl transition shadow-xl text-xl"
+              href="https://buy.stripe.com/14A7sL7fP3JB8j64O72Ji0M"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-primary hover:bg-primary/90 text-white font-bold py-5 px-10 rounded-xl transition shadow-xl text-xl cursor-pointer"
             >
               SECURE YOUR SPOT NOW – ONLY 6 SPOTS REMAINING 🔥
-            </button>
+            </a>
           </div>
           
           <p className="text-center mt-10">To your success in 2025 and beyond,</p>

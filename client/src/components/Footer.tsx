@@ -64,10 +64,10 @@ const Footer = () => {
             <div>
               <h4 className="font-bold mb-4">Company</h4>
               <ul className="space-y-2 text-white">
-                <li><a href="#" className="text-white hover:text-[#1c65b8] transition">About Us</a></li>
-                <li><a href="#" className="text-white hover:text-[#1c65b8] transition">Contact</a></li>
-                <li><a href="#" className="text-white hover:text-[#1c65b8] transition">Privacy Policy</a></li>
-                <li><a href="#" className="text-white hover:text-[#1c65b8] transition">Terms of Service</a></li>
+                <li><a href="https://salesgenius.co/#section-000GKsHQCz" className="text-white hover:text-[#1c65b8] transition" target="_blank" rel="noopener noreferrer">About Us</a></li>
+                <li><a href="https://salesgenius.co/#section-cgPH8BM2q" className="text-white hover:text-[#1c65b8] transition" target="_blank" rel="noopener noreferrer">Contact</a></li>
+                <li><a href="https://salesgenius.co/privacypolicy-3365" className="text-white hover:text-[#1c65b8] transition" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+                <li><a href="https://salesgenius.co/termsofservice" className="text-white hover:text-[#1c65b8] transition" target="_blank" rel="noopener noreferrer">Terms of Service</a></li>
               </ul>
             </div>
           </div>
