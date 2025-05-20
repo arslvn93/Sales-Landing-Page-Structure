@@ -19,9 +19,16 @@ const SalesLetterSection = () => {
       socialProofRef.current.style.transform = "translateY(30px)";
     }
     
+    // Set initial visibility for letter content
     if (letterContentRef.current) {
-      letterContentRef.current.style.opacity = "0";
-      letterContentRef.current.style.transform = "translateY(30px)";
+      // For mobile, ensure visibility is maintained
+      if (window.innerWidth < 768) {
+        letterContentRef.current.style.opacity = "1";
+        letterContentRef.current.style.transform = "none";
+      } else {
+        letterContentRef.current.style.opacity = "0";
+        letterContentRef.current.style.transform = "translateY(30px)";
+      }
     }
     
     if (ctaButtonRef.current) {
