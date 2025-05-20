@@ -241,8 +241,10 @@ const CtaSection = () => {
           <div className="text-center">
             <a 
               ref={ctaButtonRef}
-              href="#" 
+              href="https://buy.stripe.com/14A7sL7fP3JB8j64O72Ji0M" 
               className="inline-block bg-white hover:bg-gray-100 text-[#193d65] font-bold py-4 px-10 rounded-lg text-xl transition shadow-lg mb-6"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               SECURE YOUR SPOT - ONLY 6 AVAILABLE <i className="fas fa-arrow-right ml-2"></i>
             </a>
