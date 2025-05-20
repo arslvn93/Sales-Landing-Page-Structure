@@ -53,7 +53,7 @@ const Navbar = () => {
             Features
           </button>
           <button 
-            onClick={() => scrollToSection("pricing")} 
+            onClick={() => scrollToSection("cta")} 
             className="text-white hover:text-[#1c65b8] font-medium transition"
           >
             Pricing
