@@ -8,10 +8,11 @@ const SalesLetterSection = () => {
   const ctaButtonRef = useRef<HTMLAnchorElement>(null);
 
   useEffect(() => {
-    // Initial setup - hide elements
+    // Make sure headline is always visible on all devices
     if (headlineRef.current) {
-      headlineRef.current.style.opacity = "0";
-      headlineRef.current.style.transform = "translateY(30px)";
+      headlineRef.current.style.opacity = "1";
+      headlineRef.current.style.transform = "none";
+      headlineRef.current.style.visibility = "visible";
     }
     
     if (socialProofRef.current) {
@@ -42,14 +43,8 @@ const SalesLetterSection = () => {
           socialProofRef.current.style.transition = "opacity 0.6s ease, transform 0.6s ease";
         }
         
-        // Animate headline
-        setTimeout(() => {
-          if (headlineRef.current) {
-            headlineRef.current.style.opacity = "1";
-            headlineRef.current.style.transform = "translateY(0)";
-            headlineRef.current.style.transition = "opacity 0.7s ease, transform 0.7s ease";
-          }
-        }, 300);
+        // No need to animate headline since we already made it visible for all devices
+        // This ensures it's visible even if the animation doesn't trigger properly
         
         // Skip animation for letter content - keep it always visible
         if (letterContentRef.current) {
