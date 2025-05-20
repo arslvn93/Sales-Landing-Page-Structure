@@ -28,9 +28,11 @@ const SalesLetterSection = () => {
       letterContentRef.current.style.transform = "none";
     }
     
+    // Make CTA button always visible on all devices
     if (ctaButtonRef.current) {
-      ctaButtonRef.current.style.opacity = "0";
-      ctaButtonRef.current.style.transform = "translateY(30px)";
+      ctaButtonRef.current.style.opacity = "1";
+      ctaButtonRef.current.style.transform = "none";
+      ctaButtonRef.current.style.visibility = "visible";
     }
     
     // Setup intersection observer for animations
@@ -50,14 +52,8 @@ const SalesLetterSection = () => {
           letterContentRef.current.style.transform = "translateY(0)";
         }
         
-        // Animate CTA button
-        setTimeout(() => {
-          if (ctaButtonRef.current) {
-            ctaButtonRef.current.style.opacity = "1";
-            ctaButtonRef.current.style.transform = "translateY(0)";
-            ctaButtonRef.current.style.transition = "opacity 0.7s ease, transform 0.7s ease";
-          }
-        }, 800);
+        // No need to animate CTA button since we already made it visible for all devices
+        // This ensures it's visible on all devices including mobile
         
         // Disconnect observer once animation is triggered
         observer.disconnect();
@@ -302,10 +298,11 @@ const SalesLetterSection = () => {
           <div className="text-center mt-12">
             <a 
               ref={ctaButtonRef}
-              href="https://buy.stripe.com/14A7sL7fP3JB8j64O72Ji0M"
+              href="https://buy.stripe.com/14A7sL7fP3JB8j64O72Ji0M?success_url=https%3A%2F%2Fleadmachine.salesgenius.co%2Fthank-you"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-primary hover:bg-primary/90 text-white font-bold py-5 px-10 rounded-xl transition shadow-xl text-xl cursor-pointer"
+              style={{ visibility: 'visible', opacity: 1 }}
             >
               SECURE YOUR SPOT NOW – ONLY 6 SPOTS REMAINING 🔥
             </a>
