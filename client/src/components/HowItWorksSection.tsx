@@ -5,12 +5,12 @@ const HowItWorksSection = () => {
     {
       number: 1,
       title: "We Build Your Lead Generation Machine",
-      description: "Our team creates your entire campaign from scratch - writing compelling ad copy, building campaigns, and setting up all targeting for your specific market."
+      description: "Our team help you pick one of our proven campaigns that attract your dream audience - we've already written compelling ad copy, built the campaigns, and setting up all targeting for your specific market."
     },
     {
       number: 2,
       title: "We Launch Your Campaigns & Deliver Leads",
-      description: "Within 7 days, qualified buyer leads start flowing directly into your CRM - complete with contact information and buyer preferences."
+      description: "Within 7 days, buyer leads start flowing directly into your CRM - complete with contact information & preferred moving timeline."
     },
     {
       number: 3,
