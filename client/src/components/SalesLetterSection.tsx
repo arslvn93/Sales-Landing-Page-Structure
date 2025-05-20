@@ -251,10 +251,6 @@ const SalesLetterSection = () => {
                 <span className="text-primary mt-1 mr-2 font-bold">●</span>
                 <span>If we don't deliver, you get every penny back - no questions asked</span>
               </li>
-              <li className="flex items-start">
-                <span className="text-primary mt-1 mr-2 font-bold">●</span>
-                <span><strong>30-Day Satisfaction:</strong> Full refund if you're not completely satisfied</span>
-              </li>
             </ul>
           </div>
           
