@@ -19,16 +19,10 @@ const SalesLetterSection = () => {
       socialProofRef.current.style.transform = "translateY(30px)";
     }
     
-    // Set initial visibility for letter content
+    // Always keep the letter content visible on all devices
     if (letterContentRef.current) {
-      // For mobile, ensure visibility is maintained
-      if (window.innerWidth < 768) {
-        letterContentRef.current.style.opacity = "1";
-        letterContentRef.current.style.transform = "none";
-      } else {
-        letterContentRef.current.style.opacity = "0";
-        letterContentRef.current.style.transform = "translateY(30px)";
-      }
+      letterContentRef.current.style.opacity = "1";
+      letterContentRef.current.style.transform = "none";
     }
     
     if (ctaButtonRef.current) {
@@ -57,14 +51,11 @@ const SalesLetterSection = () => {
           }
         }, 300);
         
-        // Animate letter content
-        setTimeout(() => {
-          if (letterContentRef.current) {
-            letterContentRef.current.style.opacity = "1";
-            letterContentRef.current.style.transform = "translateY(0)";
-            letterContentRef.current.style.transition = "opacity 0.8s ease, transform 0.8s ease";
-          }
-        }, 600);
+        // Skip animation for letter content - keep it always visible
+        if (letterContentRef.current) {
+          letterContentRef.current.style.opacity = "1";
+          letterContentRef.current.style.transform = "translateY(0)";
+        }
         
         // Animate CTA button
         setTimeout(() => {
@@ -172,8 +163,8 @@ const SalesLetterSection = () => {
         {/* Sales Letter Content - Modern Style with Emojis and Highlights */}
         <div 
           ref={letterContentRef}
-          className="max-w-3xl mx-auto text-lg text-gray-800 space-y-6 px-4 md:px-0 bg-white w-full relative z-10"
-          style={{ color: '#333' }}
+          className="max-w-3xl mx-auto text-lg space-y-6 px-4 md:px-0 bg-white w-full relative z-10"
+          style={{ color: '#333333', opacity: 1, visibility: 'visible' }}
         >
           <p className="font-bold text-xl text-center text-secondary">👋 Dear Real Estate Agent Who Wants to Make 2025 Your Best Year Yet,</p>
           
