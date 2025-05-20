@@ -101,6 +101,7 @@ const SalesLetterSection = () => {
         <h2 
           ref={headlineRef}
           className="text-3xl md:text-5xl font-bold text-center mb-16 leading-tight text-secondary max-w-5xl mx-auto"
+          style={{ visibility: 'visible', opacity: 1 }}
         >
           "SPRING SPECIAL: THE <span className="text-primary">AMBITIOUS AGENT LEAD MACHINE</span> 6-MONTH FAST-TRACK SYSTEM"
         </h2>
