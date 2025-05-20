@@ -15,9 +15,11 @@ const SalesLetterSection = () => {
       headlineRef.current.style.visibility = "visible";
     }
     
+    // Make social proof stars always visible on all devices
     if (socialProofRef.current) {
-      socialProofRef.current.style.opacity = "0";
-      socialProofRef.current.style.transform = "translateY(30px)";
+      socialProofRef.current.style.opacity = "1";
+      socialProofRef.current.style.transform = "none";
+      socialProofRef.current.style.visibility = "visible";
     }
     
     // Always keep the letter content visible on all devices
@@ -36,12 +38,8 @@ const SalesLetterSection = () => {
       if (entries[0].isIntersecting) {
         console.log("Sales letter section in view, animating...");
         
-        // Animate social proof
-        if (socialProofRef.current) {
-          socialProofRef.current.style.opacity = "1";
-          socialProofRef.current.style.transform = "translateY(0)";
-          socialProofRef.current.style.transition = "opacity 0.6s ease, transform 0.6s ease";
-        }
+        // No need to animate social proof since we already made it visible for all devices
+        // This ensures it's visible even on mobile devices
         
         // No need to animate headline since we already made it visible for all devices
         // This ensures it's visible even if the animation doesn't trigger properly
@@ -81,6 +79,7 @@ const SalesLetterSection = () => {
         <div 
           ref={socialProofRef}
           className="flex flex-col items-center justify-center mb-8"
+          style={{ visibility: 'visible', opacity: 1 }}
         >
           <div className="flex items-center text-accent mb-1">
             <i className="fas fa-star"></i>
