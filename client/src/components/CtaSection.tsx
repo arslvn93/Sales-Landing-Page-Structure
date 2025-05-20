@@ -241,7 +241,7 @@ const CtaSection = () => {
           <div className="text-center">
             <a 
               ref={ctaButtonRef}
-              href="https://buy.stripe.com/14A7sL7fP3JB8j64O72Ji0M?success_url=https%3A%2F%2F{{APP_DOMAIN}}%2Fthank-you" 
+              href="https://buy.stripe.com/14A7sL7fP3JB8j64O72Ji0M?success_url=https%3A%2F%2Fleadmachine.salesgenius.co%2Fthank-you" 
               className="inline-block bg-white hover:bg-gray-100 text-[#193d65] font-bold py-4 px-10 rounded-lg text-xl transition shadow-lg mb-6"
               target="_blank"
               rel="noopener noreferrer"
