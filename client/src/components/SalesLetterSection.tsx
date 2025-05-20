@@ -324,7 +324,7 @@ const SalesLetterSection = () => {
           </div>
           
           <p className="text-center mt-10">To your success in 2025 and beyond,</p>
-          <p className="text-center font-bold">Ryan & The Lead Machine Team ✌️</p>
+          <p className="text-center font-bold">Emma, Ryan & The SalesGenius Team ✌️</p>
           
           <div className="bg-yellow-50 p-4 rounded-xl mt-8 text-center">
             <p className="font-medium text-sm">
