@@ -157,7 +157,7 @@ const TestimonialsSection = () => {
             ref={descriptionRef}
             className="text-lg max-w-3xl mx-auto text-white"
           >
-            Join the thousands of real estate agents who have transformed their lead generation with our program.
+            Join the hundreds of real estate agents who have transformed their lead generation with our systems.
           </p>
 
         </div>
