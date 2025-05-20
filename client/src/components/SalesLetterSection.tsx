@@ -5,7 +5,7 @@ const SalesLetterSection = () => {
   const headlineRef = useRef<HTMLHeadingElement>(null);
   const socialProofRef = useRef<HTMLDivElement>(null);
   const letterContentRef = useRef<HTMLDivElement>(null);
-  const ctaButtonRef = useRef<HTMLButtonElement>(null);
+  const ctaButtonRef = useRef<HTMLAnchorElement>(null);
 
   useEffect(() => {
     // Initial setup - hide elements

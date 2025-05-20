@@ -78,19 +78,13 @@ const Footer = () => {
             &copy; 2025 SalesGenius. All rights reserved.
           </p>
           <div className="flex space-x-4">
-            <a href="#" className="text-white hover:text-[#1c65b8] transition">
+            <a href="https://www.facebook.com/people/SalesGenius/100094384758378/" className="text-white hover:text-[#1c65b8] transition" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a href="#" className="text-white hover:text-[#1c65b8] transition">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="#" className="text-white hover:text-[#1c65b8] transition">
+            <a href="https://www.instagram.com/salesgeniusofficial/" className="text-white hover:text-[#1c65b8] transition" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="#" className="text-white hover:text-[#1c65b8] transition">
-              <i className="fab fa-linkedin-in"></i>
-            </a>
-            <a href="#" className="text-white hover:text-[#1c65b8] transition">
+            <a href="https://www.youtube.com/@SalesGeniusOfficial" className="text-white hover:text-[#1c65b8] transition" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-youtube"></i>
             </a>
           </div>
